@@ -8,9 +8,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SystemMacro: NSObject {
     static func registarMusicPlayBack(application :UIApplication) -> Void {
-      
+        do{
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+            try session.setActive(true)
+        }catch{
+            print(error)
+        }
     }
+    
+    
 }

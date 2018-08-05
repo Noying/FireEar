@@ -17,6 +17,7 @@
 		B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F6B2115826E0039220A /* LaunchScreen.storyboard */; };
 		B0EE7F782115826E0039220A /* FireEarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F772115826E0039220A /* FireEarTests.swift */; };
 		B0EE7F832115826E0039220A /* FireEarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F822115826E0039220A /* FireEarUITests.swift */; };
+		B0F29BF22117212200CF3193 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F29BF12117212200CF3193 /* AVFoundation.framework */; };
 		ECFD663BA7CE04A8B284BB79 /* Pods_FireEarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */; };
 		F83A188240F17CBBFA62CE25 /* Pods_FireEarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		B0EE7F7E2115826E0039220A /* FireEarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireEarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EE7F822115826E0039220A /* FireEarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarUITests.swift; sourceTree = "<group>"; };
 		B0EE7F842115826E0039220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F29BF12117212200CF3193 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B59048734D995C6A7DF5C349 /* Pods-FireEarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarTests/Pods-FireEarTests.release.xcconfig"; sourceTree = "<group>"; };
 		C97799FC1F7C83F8E5415E94 /* Pods-FireEar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEar/Pods-FireEar.release.xcconfig"; sourceTree = "<group>"; };
 		CFB528EA8C882345AAF58B1E /* Pods-FireEarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarTests/Pods-FireEarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F29BF22117212200CF3193 /* AVFoundation.framework in Frameworks */,
 				AD14D653ECF3DE19C48F5308 /* Pods_FireEar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		058E258DBCCE26910199B6A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0F29BF12117212200CF3193 /* AVFoundation.framework */,
 				405A402236179F0F85B88FE8 /* Pods_FireEar.framework */,
 				6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */,
 				6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */,
@@ -122,13 +126,6 @@
 				B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */,
 			);
 			path = MusicPlayer;
-			sourceTree = "<group>";
-		};
-		B0CC11772115843D00C3D239 /* User */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 		B0CC11782115880600C3D239 /* Macro */ = {
@@ -164,8 +161,8 @@
 		B0EE7F612115826D0039220A /* FireEar */ = {
 			isa = PBXGroup;
 			children = (
+				B0F29BF02117206E00CF3193 /* User */,
 				B0CC11782115880600C3D239 /* Macro */,
-				B0CC11772115843D00C3D239 /* User */,
 				B0CC11762115843200C3D239 /* MusicPlayer */,
 				B0EE7F622115826D0039220A /* AppDelegate.swift */,
 				B0EE7F642115826D0039220A /* ViewController.swift */,
@@ -193,6 +190,13 @@
 				B0EE7F842115826E0039220A /* Info.plist */,
 			);
 			path = FireEarUITests;
+			sourceTree = "<group>";
+		};
+		B0F29BF02117206E00CF3193 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
