@@ -22,10 +22,10 @@ class SystemMacro: NSObject {
             print(error)
         }
     }
+  
     
     //开启本地通知权限
     static func permissLocationNotification(_ application:UIApplication)->Void{
-        do{
             if #available(iOS 10.0, *) {
                 let center = UNUserNotificationCenter.current()
                 center.requestAuthorization(options: [UNAuthorizationOptions.alert,UNAuthorizationOptions.sound], completionHandler: {(granted:Bool,error:Error?) -> Void in
@@ -34,16 +34,22 @@ class SystemMacro: NSObject {
             } else {
                 // Fallback on earlier versions
                 //低于10.0版本的
-                if(application.currentUserNotificationSettings?.types == UIUserNotificationTypeNone){
-                    application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: UIUserNotificationType.alert|UIUserNotificationType.sound|UIUserNotificationType.badge, categories: nil))
+                if(application.currentUserNotificationSettings?.types == UIUserNotificationType.init(rawValue: 0)){
+                    application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: [UIUserNotificationType.alert,UIUserNotificationType.sound,UIUserNotificationType.badge], categories: nil))
                 }
             }
-        
-            
-        }catch{
-            print(error)
-        }
     }
     
+    //返回沙盒地址，后面自行添加Documents什么的
+    static func getBundlePath() -> String {
+        let bundle = Bundle.main;
+        return bundle.bundlePath;
+    }
     
+    //返回Documents地址
+    static func getDocumentsPath() -> String {
+        let docs = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        let docPath = docs[0]
+        return docPath;
+    }
 }

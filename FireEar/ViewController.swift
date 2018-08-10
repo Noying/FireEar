@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func event_stopMusic(_ sender: Any) {
+        player.writeToFile();
         player.stopMusic()
     }
 }
