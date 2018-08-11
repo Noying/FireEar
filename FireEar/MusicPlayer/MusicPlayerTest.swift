@@ -41,7 +41,7 @@ class MusicPlayerTest: NSObject {
                 var v:Int16 = Int16(0.5*32768*sin(2*Double.pi*8000*i/44100))
                 let data = buffer.int16ChannelData!
                 v = ((v&0xFF)<<8)|((v>>8)&0xFF)
-              
+                
             }
             
             let osicallar = AKOscillator()
