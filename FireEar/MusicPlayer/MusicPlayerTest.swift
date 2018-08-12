@@ -20,13 +20,13 @@ class MusicPlayerTest: NSObject {
             let audioFile = try AKAudioFile.init(readFileName: name, baseDir: .documents)
             let player = AKPlayer(audioFile: audioFile)
             player.isLooping = true
-            
-           AudioKit.output = player
+           
+            AudioKit.output = player
             try AudioKit.start()
+          
             player.startTime = 0.0
             player.endTime = 20.0
             player.start(at: AVAudioTime(hostTime: 0))
-            
         } catch  {
             print(error)
         }
@@ -54,7 +54,6 @@ class MusicPlayerTest: NSObject {
         } catch  {
             
         }
-        
     }
     
     
