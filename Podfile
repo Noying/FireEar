@@ -18,4 +18,5 @@ target 'FireEar' do
   end
 	pod 'AudioKit','~>4.0'
 	pod 'ReactiveCocoa','~>8.0'
+	pod 'SnapKit'
 end

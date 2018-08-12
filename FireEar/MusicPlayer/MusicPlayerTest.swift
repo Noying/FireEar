@@ -10,45 +10,22 @@ import UIKit
 import AudioKit
 
 
-
 class MusicPlayerTest: NSObject {
     override init() {
         
     }
     
-    func playMusic() -> Void {
+    func playMusic(_ name:String,_ startTime:Double,endTime:Double) -> Void {
         do {
-            let mp3Path = SystemMacro.getDocumentsPath() + "/test.wav";
-            let url = URL.init(fileURLWithPath: mp3Path)
-            if !FileManager.default.createFile(atPath: mp3Path, contents: nil, attributes:nil){
-                print("create fail")
-                return
-            }
-            let file = try AKAudioFile.init(forWriting: url, settings:[
-                AVFormatIDKey:kAudioFormatLinearPCM,
-                AVSampleRateKey:44100,
-                AVNumberOfChannelsKey:1,
-                AVLinearPCMBitDepthKey:16,
-                AVLinearPCMIsFloatKey:true
-                ]
-            )
+            let audioFile = try AKAudioFile.init(readFileName: name, baseDir: .documents)
+            let player = AKPlayer(audioFile: audioFile)
+            player.isLooping = true
             
-            let buffer = AVAudioPCMBuffer.init(pcmFormat: AVAudioFormat.init(standardFormatWithSampleRate: 44100, channels: 1)!, frameCapacity: 20*44100)!
-            
-            let length = buffer.frameLength
-            
-            for i in 0..<Int(length) {
-                var v:Int16 = Int16(0.5*32768*sin(2*Double.pi*8000*i/44100))
-                let data = buffer.int16ChannelData!
-                v = ((v&0xFF)<<8)|((v>>8)&0xFF)
-              
-            }
-            
-            let osicallar = AKOscillator()
-            osicallar.frequency = 8000.0
-            AudioKit.output = osicallar
-            try AudioKit.start();
-            osicallar.start()
+           AudioKit.output = player
+            try AudioKit.start()
+            player.startTime = 0.0
+            player.endTime = 20.0
+            player.start(at: AVAudioTime(hostTime: 0))
             
         } catch  {
             print(error)
@@ -57,8 +34,22 @@ class MusicPlayerTest: NSObject {
         
     }
     
+    func playMusic(frequncy:Double) -> Void {
+        do{
+            let oscillator = AKOscillator.init()
+            oscillator.frequency = frequncy
+            oscillator.amplitude = 0.5
+            AudioKit.output = oscillator
+            try AudioKit.start()
+            oscillator.play()
+        }catch{
+            print(error)
+        }
+    }
+    
     func stopMusic() -> Void {
         do {
+            AudioKit.output = nil
             try AudioKit.stop()
         } catch  {
             
@@ -66,7 +57,34 @@ class MusicPlayerTest: NSObject {
         
     }
     
-    func writeToFile() -> Void{
+    
+    func createAudioFile(url:URL,frequency:Double) -> AKAudioFile?{
+        do{    
+                    let writeFile = try AKAudioFile.init(forWriting: url, settings:[
+                        AVFormatIDKey:kAudioFormatLinearPCM,
+                        AVSampleRateKey:44100,
+                        AVNumberOfChannelsKey:1,
+                        AVLinearPCMBitDepthKey:16,
+                        AVLinearPCMIsFloatKey:false
+                        ],commonFormat:AVAudioCommonFormat.pcmFormatInt16,interleaved:false
+                    )
         
+                    let buffer = AVAudioPCMBuffer.init(pcmFormat:writeFile.processingFormat, frameCapacity: 20*44100)!
+                    buffer.frameLength = buffer.frameCapacity
+                    let length = buffer.frameCapacity
+                    let data = buffer.int16ChannelData!
+                    let p = data.pointee
+                    for i in 0..<Int(length) {
+                        var v:Int16 = Int16(Int(Int16.max)*sin(2*Double.pi*frequency*i/44100))
+                        v = (v<<8) + ((v>>8)&0xFF)
+                        p[i] = v
+                    }
+        
+                    try writeFile.write(from: buffer)
+                    return writeFile
+        }catch{
+            print("error:\(error)")
+        }
+        return nil
     }
 }
