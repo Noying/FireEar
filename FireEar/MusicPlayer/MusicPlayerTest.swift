@@ -74,8 +74,8 @@ class MusicPlayerTest: NSObject {
                     let data = buffer.int16ChannelData!
                     let p = data.pointee
                     for i in 0..<Int(length) {
-                        var v:Int16 = Int16(Int(Int16.max)*sin(2*Double.pi*frequency*i/44100))
-                        v = (v<<8) + ((v>>8)&0xFF)
+                        let v = Int16(32767*sin(2*Double.pi*frequency*i/44100))
+                       // v = (v<<8) + ((v>>8)&0xFF)
                         p[i] = v
                     }
         
