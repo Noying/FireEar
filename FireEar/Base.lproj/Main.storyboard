@@ -34,11 +34,20 @@
                                     <action selector="event_playMusic:" destination="BYZ-38-t0r" eventType="touchDown" id="7Sz-Yi-Yjx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-ak-war">
+                                <rect key="frame" x="157" y="354" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="osicallor"/>
+                                <connections>
+                                    <action selector="event_osicallor:" destination="BYZ-38-t0r" eventType="touchDown" id="isG-eb-kih"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="osicallor" destination="VPe-ak-war" id="jR6-0K-jVo"/>
                         <outlet property="playButton" destination="W7L-BP-ZwH" id="VyO-JL-uif"/>
                         <outlet property="stopButton" destination="WGA-Dd-2Mb" id="huR-TI-u2J"/>
                     </connections>
