@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD14D653ECF3DE19C48F5308 /* Pods_FireEar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405A402236179F0F85B88FE8 /* Pods_FireEar.framework */; };
+		B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9812124662A00FD29E9 /* MusicCreateManger.swift */; };
+		B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9832124663D00FD29E9 /* MusicPlayer.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
 		B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F622115826D0039220A /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 		6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireEarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireEarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB3BA2691EB8DC42082B22B /* Pods-FireEarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarUITests/Pods-FireEarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B000C9812124662A00FD29E9 /* MusicCreateManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCreateManger.swift; sourceTree = "<group>"; };
+		B000C9832124663D00FD29E9 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
 		B0EE7F5F2115826D0039220A /* FireEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */,
+				B000C9812124662A00FD29E9 /* MusicCreateManger.swift */,
+				B000C9832124663D00FD29E9 /* MusicPlayer.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -396,7 +402,9 @@
 			files = (
 				B0EE7F652115826D0039220A /* ViewController.swift in Sources */,
 				B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */,
+				B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */,
 				B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */,
+				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
