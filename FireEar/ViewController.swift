@@ -36,13 +36,17 @@ class ViewController: UIViewController {
    //     player.playMusic("test.wav", 0.0, endTime: 20.0)
         let wavPath = SystemMacro.getDocumentsPath() + "/test.wav"
         let url = URL.init(fileURLWithPath: wavPath)
-        player.createAudioFile(url:url,frequency: 1)
+
+        
+        player.createAudioFile(url:url,frequency: 500)
+        player.playMusic("test.wav", 0.0, endTime: 20.0)
         print("playMusic button down")
     }
     
   
     @IBAction func event_osicallor(_ sender: Any) {
         player.playMusic(frequncy: 300)
+
       //  player.playMusic("test.wav", 0.0, endTime: 20.0)
     }
     

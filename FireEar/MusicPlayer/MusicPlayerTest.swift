@@ -21,12 +21,13 @@ class MusicPlayerTest: NSObject {
             let player = AKPlayer(audioFile: audioFile)
             player.isLooping = true
             
-           AudioKit.output = player
+            AudioKit.output = player
             try AudioKit.start()
+          
             player.startTime = 0.0
             player.endTime = 20.0
             player.start(at: AVAudioTime(hostTime: 0))
-            
+
         } catch  {
             print(error)
         }
@@ -54,7 +55,6 @@ class MusicPlayerTest: NSObject {
         } catch  {
             
         }
-        
     }
     
     
@@ -68,6 +68,7 @@ class MusicPlayerTest: NSObject {
                         AVLinearPCMIsFloatKey:false
                         ],commonFormat:AVAudioCommonFormat.pcmFormatInt16,interleaved:false
                     )
+
         
                     let buffer = AVAudioPCMBuffer.init(pcmFormat:writeFile.processingFormat, frameCapacity: 20*44100)!
                     buffer.frameLength = buffer.frameCapacity
@@ -75,8 +76,8 @@ class MusicPlayerTest: NSObject {
                     let data = buffer.int16ChannelData!
                     let p = data.pointee
                     for i in 0..<Int(length) {
-                        var v:Int16 = Int16(Int(Int16.max)*sin(2*Double.pi*frequency*i/44100))
-                        v = (v<<8) + ((v>>8)&0xFF)
+                        let v = Int16(32767*sin(2*Double.pi*frequency*i/44100))
+                       // v = (v<<8) + ((v>>8)&0xFF)
                         p[i] = v
                     }
         
