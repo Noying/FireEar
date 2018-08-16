@@ -34,10 +34,10 @@ class ViewController: UIViewController {
 
     @IBAction func event_playMusic(_ sender: Any) {
    //     player.playMusic("test.wav", 0.0, endTime: 20.0)
-        let wavPath = SystemMacro.getDocumentsPath() + "/test.wav"
+        let wavPath = SystemMacro.getDocumentsPath() + "/test.caf"
         let url = URL.init(fileURLWithPath: wavPath)
-        player.createAudioFile(url:url,frequency: 500)
-        player.playMusic("test.wav", 0.0, endTime: 20.0)
+        player.createAudioFile(url:url,frequency: 1000)
+        player.playMusic("test.caf", 0.0, endTime: 20.0)
         print("playMusic button down")
     }
     
