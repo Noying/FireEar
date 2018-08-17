@@ -17,7 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="voj-9G-ZP9">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.11381385673908583" green="0.52499935943763554" blue="0.73589939164722229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.11381385669999999" green="0.52499935939999998" blue="0.73589939159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                         </textAttributes>
@@ -40,8 +40,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tableView>
                     <navigationItem key="navigationItem" title="煲耳机" id="sCh-uj-hyy">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="wAb-pg-yYv"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="1cR-z5-eeP">
+                        <barButtonItem key="leftBarButtonItem" title="item" image="user" id="wAb-pg-yYv">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="add" id="1cR-z5-eeP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="DzI-vm-6me" kind="push" id="K7T-uI-q2k"/>
                             </connections>
@@ -100,7 +103,9 @@
                         <viewLayoutGuide key="safeArea" id="H2P-KD-PcF"/>
                     </view>
                     <navigationItem key="navigationItem" title="选择模式" id="BCu-sP-sOU">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Ugo-hk-OST"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="Ugo-hk-OST">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jh8-sd-St3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="Q8d-6S-KpX"/>
                     </view>
                     <navigationItem key="navigationItem" title="自定义" id="PBB-Ki-Nxm">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Aze-bl-Sqd"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="Aze-bl-Sqd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AM-dM-eRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,7 +143,9 @@
                         <viewLayoutGuide key="safeArea" id="84Z-gx-Nsl"/>
                     </view>
                     <navigationItem key="navigationItem" title="煲机中" id="6Tq-Nk-3h7">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="lxE-hX-Jp7"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="lxE-hX-Jp7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IA2-VG-r8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,4 +153,9 @@
             <point key="canvasLocation" x="1279" y="-407"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="32" height="32"/>
+        <image name="back" width="32" height="32"/>
+        <image name="user" width="32" height="32"/>
+    </resources>
 </document>
