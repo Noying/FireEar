@@ -8,20 +8,22 @@
 
 import UIKit
 import AudioKit
+import AudioKitUI
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var osicallor: UIButton!
+
     
-   
+    
+    
     var player = MusicPlayerTest()
     
+    required init?(coder aDeoder:NSCoder){
+        super.init(coder: aDeoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 
@@ -32,24 +34,6 @@ class ViewController: UIViewController {
     
 
 
-    @IBAction func event_playMusic(_ sender: Any) {
-   //     player.playMusic("test.wav", 0.0, endTime: 20.0)
-        let wavPath = SystemMacro.getDocumentsPath() + "/test.caf"
-        let url = URL.init(fileURLWithPath: wavPath)
-        player.createAudioFile(url:url,frequency: 1000)
-        player.playMusic("test.caf", 0.0, endTime: 20.0)
-        print("playMusic button down")
-    }
-    
-  
-    @IBAction func event_osicallor(_ sender: Any) {
-        player.playMusic(frequncy: 4000)
-      //  player.playMusic("test.wav", 0.0, endTime: 20.0)
-    }
-    
-    @IBAction func event_stopMusic(_ sender: Any) {
-     
-        player.stopMusic()
-    }
+
 }
 
