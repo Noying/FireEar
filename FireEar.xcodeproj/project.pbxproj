@@ -11,6 +11,16 @@
 		B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9812124662A00FD29E9 /* MusicCreateManger.swift */; };
 		B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9832124663D00FD29E9 /* MusicPlayer.swift */; };
 		B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E6E2126520C001661AC /* SelectModelViewController.swift */; };
+		B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E7E212800F8001661AC /* MainViewController.swift */; };
+		B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E80212802DB001661AC /* FireEarViewController.swift */; };
+		B05C0E832128042C001661AC /* SelectDiyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E822128042C001661AC /* SelectDiyViewController.swift */; };
+		B05C0E85212804B9001661AC /* LocalFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E84212804B9001661AC /* LocalFileViewController.swift */; };
+		B05C0E87212805DD001661AC /* SearchLocalFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E86212805DD001661AC /* SearchLocalFileViewController.swift */; };
+		B05C0E8921280687001661AC /* CreateDiyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E8821280687001661AC /* CreateDiyViewController.swift */; };
+		B05C0E8E21280A78001661AC /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E8C21280A78001661AC /* TaskCell.swift */; };
+		B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05C0E8D21280A78001661AC /* TaskCell.xib */; };
+		B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9221280B33001661AC /* TaskInfo.swift */; };
+		B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9421280F7A001661AC /* TaskStepInfo.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
 		B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F622115826D0039220A /* AppDelegate.swift */; };
@@ -50,6 +60,16 @@
 		B000C9812124662A00FD29E9 /* MusicCreateManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCreateManger.swift; sourceTree = "<group>"; };
 		B000C9832124663D00FD29E9 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		B05C0E6E2126520C001661AC /* SelectModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelViewController.swift; sourceTree = "<group>"; };
+		B05C0E7E212800F8001661AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B05C0E80212802DB001661AC /* FireEarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarViewController.swift; sourceTree = "<group>"; };
+		B05C0E822128042C001661AC /* SelectDiyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDiyViewController.swift; sourceTree = "<group>"; };
+		B05C0E84212804B9001661AC /* LocalFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileViewController.swift; sourceTree = "<group>"; };
+		B05C0E86212805DD001661AC /* SearchLocalFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocalFileViewController.swift; sourceTree = "<group>"; };
+		B05C0E8821280687001661AC /* CreateDiyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDiyViewController.swift; sourceTree = "<group>"; };
+		B05C0E8C21280A78001661AC /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		B05C0E8D21280A78001661AC /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		B05C0E9221280B33001661AC /* TaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfo.swift; sourceTree = "<group>"; };
+		B05C0E9421280F7A001661AC /* TaskStepInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepInfo.swift; sourceTree = "<group>"; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
 		B0EE7F5F2115826D0039220A /* FireEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +144,55 @@
 			isa = PBXGroup;
 			children = (
 				B05C0E6E2126520C001661AC /* SelectModelViewController.swift */,
+				B05C0E7E212800F8001661AC /* MainViewController.swift */,
+				B05C0E80212802DB001661AC /* FireEarViewController.swift */,
+				B05C0E822128042C001661AC /* SelectDiyViewController.swift */,
+				B05C0E84212804B9001661AC /* LocalFileViewController.swift */,
+				B05C0E86212805DD001661AC /* SearchLocalFileViewController.swift */,
+				B05C0E8821280687001661AC /* CreateDiyViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B05C0E8A21280A62001661AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B05C0E8B21280A69001661AC /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B05C0E8B21280A69001661AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B05C0E8C21280A78001661AC /* TaskCell.swift */,
+				B05C0E8D21280A78001661AC /* TaskCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B05C0E9021280AFE001661AC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B05C0E9121280B09001661AC /* Task */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B05C0E9121280B09001661AC /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				B05C0E9221280B33001661AC /* TaskInfo.swift */,
+				B05C0E9421280F7A001661AC /* TaskStepInfo.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		B05C0E9621280FD5001661AC /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		B0CC11762115843200C3D239 /* MusicPlayer */ = {
@@ -169,8 +236,10 @@
 		B0EE7F612115826D0039220A /* FireEar */ = {
 			isa = PBXGroup;
 			children = (
+				B05C0E9621280FD5001661AC /* FileManager */,
+				B05C0E9021280AFE001661AC /* User */,
+				B05C0E8A21280A62001661AC /* View */,
 				B05C0E6D212651D9001661AC /* ViewController */,
-				B0F29BF02117206E00CF3193 /* User */,
 				B0CC11782115880600C3D239 /* Macro */,
 				B0CC11762115843200C3D239 /* MusicPlayer */,
 				B0EE7F622115826D0039220A /* AppDelegate.swift */,
@@ -181,13 +250,6 @@
 				B0EE7F6E2115826E0039220A /* Info.plist */,
 			);
 			path = FireEar;
-			sourceTree = "<group>";
-		};
-		B0F29BF02117206E00CF3193 /* User */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */,
 				B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */,
 				B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */,
 				B0EE7F682115826D0039220A /* Main.storyboard in Resources */,
@@ -414,10 +477,19 @@
 				B0EE7F652115826D0039220A /* ViewController.swift in Sources */,
 				B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */,
 				B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */,
+				B05C0E85212804B9001661AC /* LocalFileViewController.swift in Sources */,
+				B05C0E8921280687001661AC /* CreateDiyViewController.swift in Sources */,
 				B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */,
+				B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */,
+				B05C0E832128042C001661AC /* SelectDiyViewController.swift in Sources */,
+				B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */,
+				B05C0E8E21280A78001661AC /* TaskCell.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
+				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
+				B05C0E87212805DD001661AC /* SearchLocalFileViewController.swift in Sources */,
+				B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
