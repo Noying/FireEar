@@ -13,10 +13,8 @@
 		B000C98E212857A000FD29E9 /* PlistManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C98D212857A000FD29E9 /* PlistManger.swift */; };
 		B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C98F212857B900FD29E9 /* KeyChainManger.swift */; };
 		B000C9932128FCD900FD29E9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9922128FCD900FD29E9 /* UserInfo.swift */; };
-		B000C9962129020C00FD29E9 /* 煲机信息 in Resources */ = {isa = PBXBuildFile; fileRef = B000C9952129020C00FD29E9 /* 煲机信息 */; };
 		B000C998212905E800FD29E9 /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C997212905E800FD29E9 /* AppMacro.swift */; };
 		B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = B000C99A21291F9600FD29E9 /* stepDic.plist */; };
-		B000C99E21299D0400FD29E9 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C99D21299D0400FD29E9 /* MusicDuration.swift */; };
 		B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E6E2126520C001661AC /* SelectModelViewController.swift */; };
 		B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E7E212800F8001661AC /* MainViewController.swift */; };
 		B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E80212802DB001661AC /* FireEarViewController.swift */; };
@@ -28,6 +26,7 @@
 		B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05C0E8D21280A78001661AC /* TaskCell.xib */; };
 		B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9221280B33001661AC /* TaskInfo.swift */; };
 		B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9421280F7A001661AC /* TaskStepInfo.swift */; };
+		B05FA45D212A3A14005D9E18 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05FA45C212A3A13005D9E18 /* MusicDuration.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
 		B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F622115826D0039220A /* AppDelegate.swift */; };
@@ -69,10 +68,8 @@
 		B000C98D212857A000FD29E9 /* PlistManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManger.swift; sourceTree = "<group>"; };
 		B000C98F212857B900FD29E9 /* KeyChainManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManger.swift; sourceTree = "<group>"; };
 		B000C9922128FCD900FD29E9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		B000C9952129020C00FD29E9 /* 煲机信息 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "煲机信息"; sourceTree = "<group>"; };
 		B000C997212905E800FD29E9 /* AppMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
 		B000C99A21291F9600FD29E9 /* stepDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stepDic.plist; sourceTree = "<group>"; };
-		B000C99D21299D0400FD29E9 /* MusicDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicDuration.swift; path = ../../../PlistWrite/PlistWrite/MusicDuration.swift; sourceTree = "<group>"; };
 		B05C0E6E2126520C001661AC /* SelectModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelViewController.swift; sourceTree = "<group>"; };
 		B05C0E7E212800F8001661AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B05C0E80212802DB001661AC /* FireEarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +81,7 @@
 		B05C0E8D21280A78001661AC /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		B05C0E9221280B33001661AC /* TaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfo.swift; sourceTree = "<group>"; };
 		B05C0E9421280F7A001661AC /* TaskStepInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepInfo.swift; sourceTree = "<group>"; };
+		B05FA45C212A3A13005D9E18 /* MusicDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicDuration.swift; path = PlistWrite/PlistWrite/MusicDuration.swift; sourceTree = SOURCE_ROOT; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
 		B0EE7F5F2115826D0039220A /* FireEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,28 +169,12 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
-		B000C994212901E700FD29E9 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				B000C9952129020C00FD29E9 /* 煲机信息 */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
 		B000C99921291F5C00FD29E9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				B000C99A21291F9600FD29E9 /* stepDic.plist */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		B000C99C21299CC600FD29E9 /* MusicDuration */ = {
-			isa = PBXGroup;
-			children = (
-				B000C99D21299D0400FD29E9 /* MusicDuration.swift */,
-			);
-			path = MusicDuration;
 			sourceTree = "<group>";
 		};
 		B05C0E6D212651D9001661AC /* ViewController */ = {
@@ -229,7 +211,7 @@
 		B05C0E9021280AFE001661AC /* User */ = {
 			isa = PBXGroup;
 			children = (
-				B000C99C21299CC600FD29E9 /* MusicDuration */,
+				B05FA45B212A39EC005D9E18 /* MusicDuration */,
 				B000C9912128FCBA00FD29E9 /* UserInfo */,
 				B05C0E9121280B09001661AC /* Task */,
 			);
@@ -243,6 +225,14 @@
 				B05C0E9421280F7A001661AC /* TaskStepInfo.swift */,
 			);
 			path = Task;
+			sourceTree = "<group>";
+		};
+		B05FA45B212A39EC005D9E18 /* MusicDuration */ = {
+			isa = PBXGroup;
+			children = (
+				B05FA45C212A3A13005D9E18 /* MusicDuration.swift */,
+			);
+			path = MusicDuration;
 			sourceTree = "<group>";
 		};
 		B0CC11762115843200C3D239 /* MusicPlayer */ = {
@@ -268,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				B000C99921291F5C00FD29E9 /* Resource */,
-				B000C994212901E700FD29E9 /* Other */,
 				B0EE7F612115826D0039220A /* FireEar */,
 				B0EE7F602115826D0039220A /* Products */,
 				A23562CED093DF5DBB27F7C8 /* Pods */,
@@ -421,7 +410,6 @@
 				B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */,
 				B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */,
 				B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */,
-				B000C9962129020C00FD29E9 /* 煲机信息 in Resources */,
 				B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */,
 				B0EE7F682115826D0039220A /* Main.storyboard in Resources */,
 			);
@@ -545,7 +533,7 @@
 				B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
 				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
-				B000C99E21299D0400FD29E9 /* MusicDuration.swift in Sources */,
+				B05FA45D212A3A14005D9E18 /* MusicDuration.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
 				B05C0E87212805DD001661AC /* SearchLocalFileViewController.swift in Sources */,
