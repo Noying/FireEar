@@ -26,7 +26,7 @@
 		B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05C0E8D21280A78001661AC /* TaskCell.xib */; };
 		B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9221280B33001661AC /* TaskInfo.swift */; };
 		B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9421280F7A001661AC /* TaskStepInfo.swift */; };
-		B05FA45D212A3A14005D9E18 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05FA45C212A3A13005D9E18 /* MusicDuration.swift */; };
+		B05FA461212A3AB4005D9E18 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05FA460212A3AB4005D9E18 /* MusicDuration.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
 		B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F622115826D0039220A /* AppDelegate.swift */; };
@@ -81,7 +81,7 @@
 		B05C0E8D21280A78001661AC /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		B05C0E9221280B33001661AC /* TaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfo.swift; sourceTree = "<group>"; };
 		B05C0E9421280F7A001661AC /* TaskStepInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepInfo.swift; sourceTree = "<group>"; };
-		B05FA45C212A3A13005D9E18 /* MusicDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicDuration.swift; path = PlistWrite/PlistWrite/MusicDuration.swift; sourceTree = SOURCE_ROOT; };
+		B05FA460212A3AB4005D9E18 /* MusicDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDuration.swift; sourceTree = "<group>"; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
 		B0EE7F5F2115826D0039220A /* FireEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,7 +230,7 @@
 		B05FA45B212A39EC005D9E18 /* MusicDuration */ = {
 			isa = PBXGroup;
 			children = (
-				B05FA45C212A3A13005D9E18 /* MusicDuration.swift */,
+				B05FA460212A3AB4005D9E18 /* MusicDuration.swift */,
 			);
 			path = MusicDuration;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
 				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
-				B05FA45D212A3A14005D9E18 /* MusicDuration.swift in Sources */,
+				B05FA461212A3AB4005D9E18 /* MusicDuration.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
 				B05C0E87212805DD001661AC /* SearchLocalFileViewController.swift in Sources */,
