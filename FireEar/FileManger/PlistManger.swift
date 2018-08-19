@@ -16,14 +16,13 @@ class PlistManger :NSObject{
     let stepPath = SystemMacro.getDocumentsPath() + "/stepDic.plist";
     
     private override init() {
-        taskList = NSMutableArray.init(contentsOfFile: listPath)
-        taskStepInfoDic = NSDictionary.init(contentsOfFile: stepPath)
+        taskList = NSMutableArray.init()
+        taskStepInfoDic = NSDictionary.init()
         super.init()
     }
     
     func save() -> Void {
-        taskList?.write(toFile: listPath, atomically: true)
-        taskStepInfoDic?.write(toFile: stepPath, atomically: true)
+        
     }
     
     func step(_ i:Int) -> TaskStepInfo? {

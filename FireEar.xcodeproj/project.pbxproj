@@ -16,6 +16,7 @@
 		B000C9962129020C00FD29E9 /* 煲机信息 in Resources */ = {isa = PBXBuildFile; fileRef = B000C9952129020C00FD29E9 /* 煲机信息 */; };
 		B000C998212905E800FD29E9 /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C997212905E800FD29E9 /* AppMacro.swift */; };
 		B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = B000C99A21291F9600FD29E9 /* stepDic.plist */; };
+		B000C99E21299D0400FD29E9 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C99D21299D0400FD29E9 /* MusicDuration.swift */; };
 		B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E6E2126520C001661AC /* SelectModelViewController.swift */; };
 		B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E7E212800F8001661AC /* MainViewController.swift */; };
 		B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E80212802DB001661AC /* FireEarViewController.swift */; };
@@ -71,6 +72,7 @@
 		B000C9952129020C00FD29E9 /* 煲机信息 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "煲机信息"; sourceTree = "<group>"; };
 		B000C997212905E800FD29E9 /* AppMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
 		B000C99A21291F9600FD29E9 /* stepDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stepDic.plist; sourceTree = "<group>"; };
+		B000C99D21299D0400FD29E9 /* MusicDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicDuration.swift; path = ../../../PlistWrite/PlistWrite/MusicDuration.swift; sourceTree = "<group>"; };
 		B05C0E6E2126520C001661AC /* SelectModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelViewController.swift; sourceTree = "<group>"; };
 		B05C0E7E212800F8001661AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B05C0E80212802DB001661AC /* FireEarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B000C99C21299CC600FD29E9 /* MusicDuration */ = {
+			isa = PBXGroup;
+			children = (
+				B000C99D21299D0400FD29E9 /* MusicDuration.swift */,
+			);
+			path = MusicDuration;
+			sourceTree = "<group>";
+		};
 		B05C0E6D212651D9001661AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 		B05C0E9021280AFE001661AC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				B000C99C21299CC600FD29E9 /* MusicDuration */,
 				B000C9912128FCBA00FD29E9 /* UserInfo */,
 				B05C0E9121280B09001661AC /* Task */,
 			);
@@ -534,6 +545,7 @@
 				B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
 				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
+				B000C99E21299D0400FD29E9 /* MusicDuration.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
 				B05C0E87212805DD001661AC /* SearchLocalFileViewController.swift in Sources */,

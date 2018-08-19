@@ -38,6 +38,8 @@ class TaskInfo: NSObject {
         defaultTask.taskRemindarTime = taskStepInfoNo1.taskTime
         defaultTask.taskStyle = .auto
         defaultTask.taskStep = 0
+        
+        //TODO: 做20秒的音乐
         return defaultTask
     }
 }
