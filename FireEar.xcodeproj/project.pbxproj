@@ -10,6 +10,12 @@
 		AD14D653ECF3DE19C48F5308 /* Pods_FireEar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405A402236179F0F85B88FE8 /* Pods_FireEar.framework */; };
 		B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9812124662A00FD29E9 /* MusicCreateManger.swift */; };
 		B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9832124663D00FD29E9 /* MusicPlayer.swift */; };
+		B000C98E212857A000FD29E9 /* PlistManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C98D212857A000FD29E9 /* PlistManger.swift */; };
+		B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C98F212857B900FD29E9 /* KeyChainManger.swift */; };
+		B000C9932128FCD900FD29E9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9922128FCD900FD29E9 /* UserInfo.swift */; };
+		B000C9962129020C00FD29E9 /* 煲机信息 in Resources */ = {isa = PBXBuildFile; fileRef = B000C9952129020C00FD29E9 /* 煲机信息 */; };
+		B000C998212905E800FD29E9 /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C997212905E800FD29E9 /* AppMacro.swift */; };
+		B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = B000C99A21291F9600FD29E9 /* stepDic.plist */; };
 		B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E6E2126520C001661AC /* SelectModelViewController.swift */; };
 		B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E7E212800F8001661AC /* MainViewController.swift */; };
 		B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E80212802DB001661AC /* FireEarViewController.swift */; };
@@ -59,6 +65,12 @@
 		8DB3BA2691EB8DC42082B22B /* Pods-FireEarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarUITests/Pods-FireEarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B000C9812124662A00FD29E9 /* MusicCreateManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCreateManger.swift; sourceTree = "<group>"; };
 		B000C9832124663D00FD29E9 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		B000C98D212857A000FD29E9 /* PlistManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManger.swift; sourceTree = "<group>"; };
+		B000C98F212857B900FD29E9 /* KeyChainManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManger.swift; sourceTree = "<group>"; };
+		B000C9922128FCD900FD29E9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		B000C9952129020C00FD29E9 /* 煲机信息 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "煲机信息"; sourceTree = "<group>"; };
+		B000C997212905E800FD29E9 /* AppMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
+		B000C99A21291F9600FD29E9 /* stepDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stepDic.plist; sourceTree = "<group>"; };
 		B05C0E6E2126520C001661AC /* SelectModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelViewController.swift; sourceTree = "<group>"; };
 		B05C0E7E212800F8001661AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B05C0E80212802DB001661AC /* FireEarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +152,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B000C98C2128576100FD29E9 /* FileManger */ = {
+			isa = PBXGroup;
+			children = (
+				B000C98D212857A000FD29E9 /* PlistManger.swift */,
+				B000C98F212857B900FD29E9 /* KeyChainManger.swift */,
+			);
+			path = FileManger;
+			sourceTree = "<group>";
+		};
+		B000C9912128FCBA00FD29E9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B000C9922128FCD900FD29E9 /* UserInfo.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B000C994212901E700FD29E9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B000C9952129020C00FD29E9 /* 煲机信息 */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B000C99921291F5C00FD29E9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B000C99A21291F9600FD29E9 /* stepDic.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B05C0E6D212651D9001661AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +219,7 @@
 		B05C0E9021280AFE001661AC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				B000C9912128FCBA00FD29E9 /* UserInfo */,
 				B05C0E9121280B09001661AC /* Task */,
 			);
 			path = User;
@@ -186,13 +232,6 @@
 				B05C0E9421280F7A001661AC /* TaskStepInfo.swift */,
 			);
 			path = Task;
-			sourceTree = "<group>";
-		};
-		B05C0E9621280FD5001661AC /* FileManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FileManager;
 			sourceTree = "<group>";
 		};
 		B0CC11762115843200C3D239 /* MusicPlayer */ = {
@@ -209,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				B0CC11792115883A00C3D239 /* SystemMacro.swift */,
+				B000C997212905E800FD29E9 /* AppMacro.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -216,6 +256,8 @@
 		B0EE7F562115826D0039220A = {
 			isa = PBXGroup;
 			children = (
+				B000C99921291F5C00FD29E9 /* Resource */,
+				B000C994212901E700FD29E9 /* Other */,
 				B0EE7F612115826D0039220A /* FireEar */,
 				B0EE7F602115826D0039220A /* Products */,
 				A23562CED093DF5DBB27F7C8 /* Pods */,
@@ -236,7 +278,7 @@
 		B0EE7F612115826D0039220A /* FireEar */ = {
 			isa = PBXGroup;
 			children = (
-				B05C0E9621280FD5001661AC /* FileManager */,
+				B000C98C2128576100FD29E9 /* FileManger */,
 				B05C0E9021280AFE001661AC /* User */,
 				B05C0E8A21280A62001661AC /* View */,
 				B05C0E6D212651D9001661AC /* ViewController */,
@@ -366,7 +408,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */,
+				B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */,
 				B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */,
+				B000C9962129020C00FD29E9 /* 煲机信息 in Resources */,
 				B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */,
 				B0EE7F682115826D0039220A /* Main.storyboard in Resources */,
 			);
@@ -474,6 +518,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B000C998212905E800FD29E9 /* AppMacro.swift in Sources */,
+				B000C9932128FCD900FD29E9 /* UserInfo.swift in Sources */,
 				B0EE7F652115826D0039220A /* ViewController.swift in Sources */,
 				B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */,
 				B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */,
@@ -483,7 +529,9 @@
 				B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */,
 				B05C0E832128042C001661AC /* SelectDiyViewController.swift in Sources */,
 				B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */,
+				B000C98E212857A000FD29E9 /* PlistManger.swift in Sources */,
 				B05C0E8E21280A78001661AC /* TaskCell.swift in Sources */,
+				B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
 				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
@@ -669,7 +717,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.FireEar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.FireEar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

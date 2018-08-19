@@ -10,13 +10,14 @@ import UIKit
 import AudioKitUI
 import SnapKit
 
-class TaskCell: UITableViewCell {
 
+class TaskCell: UITableViewCell {
     @IBOutlet  var showImageView: UIImageView!
     @IBOutlet weak var stepNameLabel: UILabel!
     @IBOutlet weak var remainderTimeLabel: UILabel!
     @IBOutlet weak var outputPlot: AKNodeOutputPlot!
     @IBOutlet weak var controlBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,6 +38,11 @@ class TaskCell: UITableViewCell {
         })
     }
 
+    @IBAction func event_control(_ sender: Any) {
+        let not = Notification.init(name:AppMacro.PLAYNOTIFICATION, object: nil, userInfo: ["tag":self.tag])
+        NotificationCenter.default.post(not)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

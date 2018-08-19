@@ -31,6 +31,9 @@
                             <constraint firstAttribute="height" constant="44" id="peD-Sv-XbU"/>
                         </constraints>
                         <state key="normal" title="Button" image="play"/>
+                        <connections>
+                            <action selector="event_control:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tvD-cs-ldM"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轻音阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiK-xp-Dd2">
                         <rect key="frame" x="30" y="16" width="60" height="17"/>

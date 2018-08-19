@@ -80,7 +80,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fdZ-3W-sKc" kind="push" id="j8R-bh-Yh0"/>
+                                    <action selector="event_FireEar:" destination="DzI-vm-6me" eventType="touchUpInside" id="mpF-79-Uk6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ak-0J-gWX">
@@ -342,26 +342,26 @@
         <!--煲机中-->
         <scene sceneID="j46-o3-ynB">
             <objects>
-                <viewController id="fdZ-3W-sKc" customClass="FireEarViewController" customModule="FireEar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FireEarViewController" id="fdZ-3W-sKc" customClass="FireEarViewController" customModule="FireEar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8eD-7i-N8G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k70-QW-Mbb" customClass="AKNodeOutputPlot" customModule="AudioKitUI">
-                                <rect key="frame" x="15" y="134" width="345" height="210"/>
+                                <rect key="frame" x="15" y="90" width="345" height="210"/>
                                 <color key="backgroundColor" red="0.73333333333333328" green="0.74509803921568629" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="Zyr-Ke-2uD"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所剩时间：20:20:20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L19-dN-N69">
-                                <rect key="frame" x="40" y="399" width="295" height="24"/>
+                                <rect key="frame" x="40" y="355" width="295" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轻音阶段" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-uW-bdV">
-                                <rect key="frame" x="79" y="89" width="217" height="21"/>
+                                <rect key="frame" x="79" y="45" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

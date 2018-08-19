@@ -19,6 +19,14 @@ class SelectModelViewController: UIViewController {
         diyFireButton.layer.cornerRadius = 4.0
     }
 
+    @IBAction func event_FireEar(_ sender: Any) {
+        let taskDefault = TaskInfo.defaultTask()
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc:FireEarViewController = storyboard.instantiateViewController(withIdentifier: "FireEarViewController") as! FireEarViewController
+        vc.task = taskDefault
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func event_back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true);
     }
