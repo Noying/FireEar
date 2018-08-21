@@ -78,7 +78,7 @@ class MusicPlayerTest: NSObject {
                     for i in 0..<Int(length) {
                        // let v = Int16(32767*sin(2*Double.pi*frequency*i/44100))
                        // v = (v<<8) + ((v>>8)&0xFF)
-                        let v = createData(20.0, 20000, sweapTime: 5, sampleRate: 44100, peak: 32767, frame: i)
+                        let v = createSweepData(20.0, 20000, sweepTime: 5, sampleRate: 44100, peak: 32767, frame: i)
                         p[i] = v
                     }
         
@@ -90,11 +90,11 @@ class MusicPlayerTest: NSObject {
         return nil
     }
     
-    private func createData(_ f0:Double,_ f1:Double,sweapTime:Double,sampleRate:Int,peak:Int,frame:Int) -> Int16 {
-        let k = exp(log((f1)/f0)/sweapTime)
+    private func createSweepData(_ f0:Double,_ f1:Double,sweepTime:Double,sampleRate:Int,peak:Int,frame:Int) -> Int16 {
+        let k = exp(log((f1)/f0)/sweepTime)
         let dt = 1.0/sampleRate
         let p = 2*Double.pi*f0/log(k)
-        let fsweap = Int(sampleRate*sweapTime)
+        let fsweap = Int(sampleRate*sweepTime)
         let t = dt*(frame%fsweap)
         let data = Int16(peak*sin( p*(pow(k,t)-1)))
         return data
