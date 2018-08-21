@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    let player = MusicPlayerTest()
 
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,6 +18,10 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.tableView.dataSource = self
         let cellNib = UINib(nibName: "TaskCell", bundle:nil)
         self.tableView .register(cellNib, forCellReuseIdentifier: "TaskCellID")
+        
+        let path = SystemMacro.getDocumentsPath() + "/test.caf";
+        let url = URL.init(fileURLWithPath: path)
+        player.createAudioFile(url: url, frequency: 20);
     }
 
     override func didReceiveMemoryWarning() {

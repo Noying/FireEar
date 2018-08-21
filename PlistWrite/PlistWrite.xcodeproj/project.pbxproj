@@ -11,11 +11,9 @@
 		B000C9AE21299F9700FD29E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9AD21299F9700FD29E9 /* ViewController.swift */; };
 		B000C9B021299F9E00FD29E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B000C9AF21299F9E00FD29E9 /* Assets.xcassets */; };
 		B000C9B321299F9E00FD29E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B000C9B121299F9E00FD29E9 /* Main.storyboard */; };
-		B000C9BF21299F9F00FD29E9 /* PlistWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9BE21299F9F00FD29E9 /* PlistWriteTests.swift */; };
-		B000C9CA21299F9F00FD29E9 /* PlistWriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9C921299F9F00FD29E9 /* PlistWriteUITests.swift */; };
-		B000C9D821299FB500FD29E9 /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9D721299FB500FD29E9 /* TaskStepInfo.swift */; };
-		B000C9DA21299FC500FD29E9 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9D921299FC500FD29E9 /* MusicDuration.swift */; };
-		B000C9DC21299FCB00FD29E9 /* PlistManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9DB21299FCB00FD29E9 /* PlistManger.swift */; };
+		B04F926E212B99950071278A /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F926B212B99950071278A /* MusicDuration.swift */; };
+		B04F926F212B99950071278A /* PlistManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F926C212B99950071278A /* PlistManger.swift */; };
+		B04F9270212B99950071278A /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F926D212B99950071278A /* TaskStepInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +42,10 @@
 		B000C9B421299F9E00FD29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B000C9B521299F9E00FD29E9 /* PlistWrite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlistWrite.entitlements; sourceTree = "<group>"; };
 		B000C9BA21299F9F00FD29E9 /* PlistWriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlistWriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B000C9BE21299F9F00FD29E9 /* PlistWriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistWriteTests.swift; sourceTree = "<group>"; };
-		B000C9C021299F9F00FD29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B000C9C521299F9F00FD29E9 /* PlistWriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlistWriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B000C9C921299F9F00FD29E9 /* PlistWriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistWriteUITests.swift; sourceTree = "<group>"; };
-		B000C9CB21299F9F00FD29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B000C9D721299FB500FD29E9 /* TaskStepInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskStepInfo.swift; path = ../../FireEar/User/Task/TaskStepInfo.swift; sourceTree = "<group>"; };
-		B000C9D921299FC500FD29E9 /* MusicDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDuration.swift; sourceTree = "<group>"; };
-		B000C9DB21299FCB00FD29E9 /* PlistManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlistManger.swift; path = ../../FireEar/FileManger/PlistManger.swift; sourceTree = "<group>"; };
+		B04F926B212B99950071278A /* MusicDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDuration.swift; sourceTree = "<group>"; };
+		B04F926C212B99950071278A /* PlistManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManger.swift; sourceTree = "<group>"; };
+		B04F926D212B99950071278A /* TaskStepInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStepInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				B000C9AA21299F9700FD29E9 /* PlistWrite */,
-				B000C9BD21299F9F00FD29E9 /* PlistWriteTests */,
-				B000C9C821299F9F00FD29E9 /* PlistWriteUITests */,
 				B000C9A921299F9700FD29E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,9 +94,9 @@
 		B000C9AA21299F9700FD29E9 /* PlistWrite */ = {
 			isa = PBXGroup;
 			children = (
-				B000C9DB21299FCB00FD29E9 /* PlistManger.swift */,
-				B000C9D921299FC500FD29E9 /* MusicDuration.swift */,
-				B000C9D721299FB500FD29E9 /* TaskStepInfo.swift */,
+				B04F926B212B99950071278A /* MusicDuration.swift */,
+				B04F926C212B99950071278A /* PlistManger.swift */,
+				B04F926D212B99950071278A /* TaskStepInfo.swift */,
 				B000C9AB21299F9700FD29E9 /* AppDelegate.swift */,
 				B000C9AD21299F9700FD29E9 /* ViewController.swift */,
 				B000C9AF21299F9E00FD29E9 /* Assets.xcassets */,
@@ -113,24 +105,6 @@
 				B000C9B521299F9E00FD29E9 /* PlistWrite.entitlements */,
 			);
 			path = PlistWrite;
-			sourceTree = "<group>";
-		};
-		B000C9BD21299F9F00FD29E9 /* PlistWriteTests */ = {
-			isa = PBXGroup;
-			children = (
-				B000C9BE21299F9F00FD29E9 /* PlistWriteTests.swift */,
-				B000C9C021299F9F00FD29E9 /* Info.plist */,
-			);
-			path = PlistWriteTests;
-			sourceTree = "<group>";
-		};
-		B000C9C821299F9F00FD29E9 /* PlistWriteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B000C9C921299F9F00FD29E9 /* PlistWriteUITests.swift */,
-				B000C9CB21299F9F00FD29E9 /* Info.plist */,
-			);
-			path = PlistWriteUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,11 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B000C9DC21299FCB00FD29E9 /* PlistManger.swift in Sources */,
 				B000C9AE21299F9700FD29E9 /* ViewController.swift in Sources */,
-				B000C9DA21299FC500FD29E9 /* MusicDuration.swift in Sources */,
-				B000C9D821299FB500FD29E9 /* TaskStepInfo.swift in Sources */,
+				B04F926E212B99950071278A /* MusicDuration.swift in Sources */,
+				B04F926F212B99950071278A /* PlistManger.swift in Sources */,
 				B000C9AC21299F9700FD29E9 /* AppDelegate.swift in Sources */,
+				B04F9270212B99950071278A /* TaskStepInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B000C9BF21299F9F00FD29E9 /* PlistWriteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B000C9CA21299F9F00FD29E9 /* PlistWriteUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

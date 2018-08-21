@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Iceroy. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 
 class MusicDuration: NSObject,NSCoding{
     func encode(with aCoder: NSCoder) {

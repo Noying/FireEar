@@ -10,7 +10,6 @@ import Foundation
 
 class PlistManger :NSObject{
     var taskStepInfoDic:NSDictionary?
-    var taskList:NSArray?
     static let share:PlistManger = PlistManger()
     var stepPath:String
     
