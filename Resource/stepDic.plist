@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>startFreq</key>
+		<integer>100</integer>
+		<key>endFreq</key>
+		<integer>15000</integer>
+		<key>stepName</key>
+		<string>舒筋</string>
+		<key>stepTime</key>
+		<integer>43200</integer>
+		<key>vol</key>
+		<real>0.2</real>
+		<key>sweeptime</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>startFreq</key>
+		<integer>50</integer>
+		<key>endFreq</key>
+		<integer>18000</integer>
+		<key>stepName</key>
+		<string>通络</string>
+		<key>stepTime</key>
+		<integer>43200</integer>
+		<key>vol</key>
+		<real>0.3</real>
+		<key>sweeptime</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>startFreq</key>
+		<integer>20</integer>
+		<key>endFreq</key>
+		<integer>20000</integer>
+		<key>stepName</key>
+		<string>习武</string>
+		<key>stepTime</key>
+		<integer>252000</integer>
+		<key>vol</key>
+		<real>0.5</real>
+		<key>sweeptime</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>startFreq</key>
+		<integer>18</integer>
+		<key>endFreq</key>
+		<integer>22000</integer>
+		<key>stepName</key>
+		<string>习武</string>
+		<key>stepTime</key>
+		<integer>43200</integer>
+		<key>vol</key>
+		<real>0.7</real>
+		<key>sweeptime</key>
+		<integer>1</integer>
+	</dict>
+</array>
 </plist>

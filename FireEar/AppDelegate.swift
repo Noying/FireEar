@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SystemMacro.permissLocationNotification(application)
         //让App支持接收远程控制事件
         application.beginReceivingRemoteControlEvents()
+        
+        
         return true
     }
 

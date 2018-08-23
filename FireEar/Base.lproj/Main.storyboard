@@ -10,6 +10,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="xjV-FA-pue">
+            <objects>
+                <viewController storyboardIdentifier="Left" id="fOD-uP-ay7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMF-tH-pF0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IH8-rb-cpl">
+                                <rect key="frame" x="0.0" y="140" width="375" height="512"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bigLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HIR-1D-ptk">
+                                <rect key="frame" x="252" y="54" width="88" height="60"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cKn-JH-Fxa" firstAttribute="trailing" secondItem="IH8-rb-cpl" secondAttribute="trailing" id="2xX-ty-lHs"/>
+                            <constraint firstItem="IH8-rb-cpl" firstAttribute="leading" secondItem="cKn-JH-Fxa" secondAttribute="leading" id="bE1-Mk-j7P"/>
+                            <constraint firstItem="IH8-rb-cpl" firstAttribute="top" secondItem="HIR-1D-ptk" secondAttribute="bottom" constant="20" id="luA-ge-PHt"/>
+                            <constraint firstItem="cKn-JH-Fxa" firstAttribute="bottom" secondItem="IH8-rb-cpl" secondAttribute="bottom" constant="15" id="xxT-EW-2yj"/>
+                            <constraint firstItem="HIR-1D-ptk" firstAttribute="top" secondItem="cKn-JH-Fxa" secondAttribute="top" constant="40" id="yi5-Wc-yBB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cKn-JH-Fxa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U22-ud-LbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1100" y="-627.4362818590705"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SbB-JW-YPs">
             <objects>
@@ -34,7 +65,7 @@
         <!--煲耳机-->
         <scene sceneID="cdM-d5-4pf">
             <objects>
-                <viewController id="ug0-Ro-3s6" customClass="MainViewController" customModule="FireEar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="ug0-Ro-3s6" customClass="MainViewController" customModule="FireEar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iYH-Gf-kXU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -409,6 +440,7 @@
     <resources>
         <image name="add" width="32" height="32"/>
         <image name="back" width="32" height="32"/>
+        <image name="bigLogo" width="60" height="60"/>
         <image name="play" width="80" height="80"/>
         <image name="save" width="32" height="32"/>
         <image name="search" width="32" height="32"/>

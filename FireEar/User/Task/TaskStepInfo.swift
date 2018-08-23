@@ -35,5 +35,7 @@ class TaskStepInfo: NSObject,NSCoding{
         super.init()
     }
     
-    
+    public convenience init(dic:NSDictionary){
+        self.init()
+    }
 }

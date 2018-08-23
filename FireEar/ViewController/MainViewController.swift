@@ -8,10 +8,20 @@
 
 import UIKit
 
-class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSource {
     let player = MusicPlayerTest()
 
     @IBOutlet var tableView: UITableView!
+    var leftViewController:UIViewController?
+    
+    override func awakeFromNib() {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        if let controller:UIViewController = storyboard.instantiateViewController(withIdentifier: "Left") {
+           leftViewController = controller
+        }
+        super.awakeFromNib()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
@@ -22,6 +32,8 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let path = SystemMacro.getDocumentsPath() + "/test.caf";
         let url = URL.init(fileURLWithPath: path)
         player.createAudioFile(url: url, frequency: 20);
+        
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +44,9 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
   
     @IBAction func event_user(_ sender: Any) {
+        let window = UIApplication.shared.keyWindow
+        leftViewController?.view.frame = CGRect.init(x: 0, y: 0, width: 30, height: 200)
+        window?.addSubview((leftViewController?.view)!) //可行
     }
     
     //MARK: - tableview delegate
