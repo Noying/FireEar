@@ -8,28 +8,32 @@
 
 import Foundation
 
+//自动煲机都使用扫频煲机
 class TaskStepInfo: NSObject,NSCoding{
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(self.taskStep, forKey: "taskStep")
-        aCoder.encode(self.taskStepName, forKey: "taskStepName")
-        aCoder.encode(self.taskStepInfo, forKey: "taskStepInfo")
-        aCoder.encode(self.taskTime, forKey: "taskTime")
-        aCoder.encode(self.musicPcmList, forKey: "musicPcmList")
+        aCoder.encode(startFreq, forKey: "startFreq")
+        aCoder.encode(endFreq, forKey: "endFreq")
+        aCoder.encode(stepName, forKey: "stepName")
+        aCoder.encode(stepName, forKey: "stepTime")
+        aCoder.encode(vol, forKey: "vol")
+        aCoder.encode(sweeptime, forKey: "sweeptime")
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.taskStep = aDecoder.decodeObject(forKey: "taskStep") as? UInt
-        self.taskStepName = aDecoder.decodeObject(forKey: "taskStepName") as? String
-        self.taskStepInfo =  aDecoder.decodeObject(forKey: "taskStepInfo") as? String
-        self.taskTime = aDecoder.decodeObject(forKey: "taskTime") as? UInt
-        self.musicPcmList =  aDecoder.decodeObject(forKey: "musicPcmList") as? Array<MusicDuration>
+        startFreq = aDecoder.decodeDouble(forKey: "startFreq")
+        endFreq = aDecoder.decodeDouble(forKey: "endFreq")
+        stepName = aDecoder.decodeObject(forKey: "stepName") as? String
+        stepTime = aDecoder.decodeObject(forKey: "stepTime") as? UInt
+        vol = aDecoder.decodeDouble(forKey: "vol")
+        sweeptime = aDecoder.decodeDouble(forKey: "sweeptime")
     }
     
-    var taskStep:UInt?
-    var taskStepName:String?
-    var taskStepInfo:String?
-    var taskTime:UInt?
-    var musicPcmList:Array<MusicDuration>? //都以20秒为准，startTime:0.0s endTime:20.0s freq:450.0HZ vol:(0~1)
+    var startFreq:Double?
+    var endFreq:Double?
+    var stepName:String?
+    var stepTime:UInt?
+    var vol:Double?
+    var sweeptime:Double?
     
     override init() {
         super.init()

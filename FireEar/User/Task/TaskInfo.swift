@@ -33,13 +33,15 @@ class TaskInfo: NSObject {
     static func defaultTask() -> TaskInfo {
         let defaultTask = TaskInfo.init()
         let taskStepInfoNo1 = PlistManger.share.step(0)!
-        defaultTask.taskName = taskStepInfoNo1.taskStepName
-        defaultTask.taskTime = taskStepInfoNo1.taskTime
-        defaultTask.taskRemindarTime = taskStepInfoNo1.taskTime
+        defaultTask.taskName = taskStepInfoNo1.stepName
+        defaultTask.taskTime = taskStepInfoNo1.stepTime
+        defaultTask.taskRemindarTime = taskStepInfoNo1.stepTime
         defaultTask.taskStyle = .auto
         defaultTask.taskStep = 0
         
         //TODO: 做20秒的音乐
         return defaultTask
     }
+    
+    
 }

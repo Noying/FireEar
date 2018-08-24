@@ -25,8 +25,20 @@ class FireEarViewController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
+        
         // Do any additional setup after loading the view.
+        styleNameLabel.text = task?.taskName;
+        if let remainderTime = task?.taskRemindarTime{
+            let second = remainderTime%60
+            let minute = (remainderTime-second)%3600
+            let hour = (remainderTime-second-60*minute)/3600
+            let remText = NSString.init(format:"所剩时间:%02d:%02d:%02d",hour,minute,second)
+            remainderLabel.text = remText as String
+        }
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

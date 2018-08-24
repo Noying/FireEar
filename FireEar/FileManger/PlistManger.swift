@@ -9,15 +9,19 @@
 import Foundation
 
 class PlistManger :NSObject{
-    var taskStepInfoDic:NSArray?
-    var taskList:NSArray?
+    var taskStepInfoArray:Array<Any>?
+    var taskList:Array<Any>?
     static let share:PlistManger = PlistManger()
     
     private override init() {
-        //let docs = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        let stepPath = Bundle.main.path(forResource: "stepDic", ofType: "plist")!;
-        taskStepInfoDic = NSArray.init(contentsOf: URL.init(fileURLWithPath:stepPath))
         super.init()
+        self.loadStep()
+    }
+    
+    func loadStep()->Void{
+        let stepPath = Bundle.main.path(forResource: "stepDic", ofType: "plist")!;
+        let array = NSArray.init(contentsOfFile: stepPath)
+        taskStepInfoArray = array as? Array<Any>
     }
     
     func save() -> Void {
@@ -25,7 +29,14 @@ class PlistManger :NSObject{
     }
     
     func step(_ i:Int) -> TaskStepInfo? {
+        let dic = taskStepInfoArray![0] as! Dictionary<String,Any>
         let step = TaskStepInfo.init()
+        step.startFreq = dic["startFreq"] as? Double
+        step.endFreq = dic["endFreq"] as? Double
+        step.stepTime = dic["stepTime"] as? UInt
+        step.sweeptime = dic["sweeptime"] as? Double
+        step.stepName = dic["stepName"] as? String
+        step.vol = dic["vol"] as? Double
         return step
     }
 }
