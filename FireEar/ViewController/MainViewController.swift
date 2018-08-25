@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioKit
+import AudioKitUI
 
 class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSource {
     let player = MusicPlayerTest()
@@ -15,10 +17,6 @@ class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSou
     var leftViewController:UIViewController?
     
     override func awakeFromNib() {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        if let controller:UIViewController = storyboard.instantiateViewController(withIdentifier: "Left") {
-           leftViewController = controller
-        }
         super.awakeFromNib()
     }
     
@@ -29,11 +27,8 @@ class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSou
         let cellNib = UINib(nibName: "TaskCell", bundle:nil)
         self.tableView .register(cellNib, forCellReuseIdentifier: "TaskCellID")
         
-        let path = SystemMacro.getDocumentsPath() + "/test.caf";
-        let url = URL.init(fileURLWithPath: path)
-        player.createAudioFile(url: url, frequency: 20);
-        
-      
+        let play = MusicPlayer.shared
+        play.isloopAlways = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,9 +39,10 @@ class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSou
 
   
     @IBAction func event_user(_ sender: Any) {
-        let window = UIApplication.shared.keyWindow
-        leftViewController?.view.frame = CGRect.init(x: 0, y: 0, width: 30, height: 200)
-        window?.addSubview((leftViewController?.view)!) //可行
+//        let window = UIApplication.shared.keyWindow
+//        leftViewController?.view.frame = CGRect.init(x: 0, y: 0, width: 30, height: 200)
+//        window?.addSubview((leftViewController?.view)!) //可行
+        
     }
     
     //MARK: - tableview delegate

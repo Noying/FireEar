@@ -8,12 +8,14 @@
 
 import Foundation
 import AudioKit
+import ReactiveCocoa
 
 class MusicPlayer: NSObject {
-    var isloop:Bool = false
+    var filePlayer:AKPlayer?
+    var isloopAlways:Bool = true
     var playPath:[String]?
     var keepTime:UInt?  //持续时间
-    var filePlayer:AKPlayer?
+    
     
     static let shared:MusicPlayer = MusicPlayer()
     
@@ -23,7 +25,7 @@ class MusicPlayer: NSObject {
     
     func play() -> Void {
         do {
-            filePlayer?.start(at:AVAudioTime(hostTime: 0))
+            filePlayer?.play()
             try AudioKit.start()
         } catch  {
             print(error)

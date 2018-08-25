@@ -17,17 +17,27 @@ class MusicPlayerTest: NSObject {
     
     func playMusic(_ name:String,_ startTime:Double,endTime:Double) -> Void {
         do {
-            let audioFile = try AKAudioFile.init(readFileName: name, baseDir: .documents)
-            let player = AKPlayer(audioFile: audioFile)
-            player.isLooping = true
+            let player = AKPlayer(url: URL(fileURLWithPath: name))
+            var i = 0
+            player?.completionHandler = {
+
+                if i<1 {
+                   player?.play()
+                }
+                i = i+1
+                AKLog(i)
+            }
             
             AudioKit.output = player
             try AudioKit.start()
           
-            player.startTime = 0.0
-            player.endTime = 20.0
-            player.start(at: AVAudioTime(hostTime: 0))
+            
 
+           
+           //player?.isLooping = true
+            
+            player?.play()
+          
         } catch  {
             print(error)
         }
@@ -37,10 +47,10 @@ class MusicPlayerTest: NSObject {
     
     func playMusic(frequncy:Double) -> Void {
         do{
-            let oscillator = AKOscillator.init()
-            oscillator.frequency = frequncy
-            oscillator.amplitude = 0.5
+            let oscillator = AKOscillator()
+            //oscillator.frequency = frequncy
             AudioKit.output = oscillator
+            
             try AudioKit.start()
             oscillator.play()
         }catch{
@@ -58,7 +68,7 @@ class MusicPlayerTest: NSObject {
     }
     
     
-    func createAudioFile(url:URL,frequency:Double) -> AKAudioFile?{
+    func createAudioFile(url:URL,frequency:Double) -> Void{
         do{    
                     let writeFile = try AKAudioFile.init(forWriting: url, settings:[
                         AVFormatIDKey:kAudioFormatLinearPCM,
@@ -83,11 +93,9 @@ class MusicPlayerTest: NSObject {
                     }
         
                     try writeFile.write(from: buffer)
-                    return writeFile
         }catch{
             print("error:\(error)")
         }
-        return nil
     }
     
     private func createSweepData(_ f0:Double,_ f1:Double,sweepTime:Double,sampleRate:Int,peak:Int,frame:Int) -> Int16 {

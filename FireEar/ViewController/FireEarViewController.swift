@@ -11,7 +11,7 @@ import AudioKitUI
 
 class FireEarViewController: UIViewController {
 
-    @IBOutlet weak var outputPlot: AKNodeOutputPlot!
+
     @IBOutlet weak var styleNameLabel: UILabel!
     @IBOutlet weak var remainderLabel: UILabel!
     @IBOutlet weak var controlBtn: UIButton!
@@ -20,11 +20,6 @@ class FireEarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 11.0, *) {
-            outputPlot.backgroundColor = UIColor.init(named: "playColor")
-        } else {
-            // Fallback on earlier versions
-        }
         
         // Do any additional setup after loading the view.
         styleNameLabel.text = task?.taskName;

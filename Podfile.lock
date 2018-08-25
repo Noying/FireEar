@@ -10,7 +10,7 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - AudioKit (~> 4.0)
+  - AudioKit
   - ReactiveCocoa (~> 8.0)
   - SnapKit
 
@@ -29,6 +29,6 @@ SPEC CHECKSUMS:
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 9823c6529ce95c3df7c83e1d1f4e344ceb46b6c7
+PODFILE CHECKSUM: 59c9a7317a8e1ffeddc9f0629651d160a1648010
 
 COCOAPODS: 1.5.3

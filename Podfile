@@ -16,7 +16,7 @@ target 'FireEar' do
     inherit! :search_paths
     # Pods for testing
   end
-	pod 'AudioKit','~>4.0'
+	pod 'AudioKit'
 	pod 'ReactiveCocoa','~>8.0'
 	pod 'SnapKit'
 end

@@ -378,7 +378,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k70-QW-Mbb" customClass="AKNodeOutputPlot" customModule="AudioKitUI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k70-QW-Mbb">
                                 <rect key="frame" x="15" y="90" width="345" height="210"/>
                                 <color key="backgroundColor" red="0.73333333333333328" green="0.74509803921568629" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -441,7 +441,7 @@
         <image name="add" width="32" height="32"/>
         <image name="back" width="32" height="32"/>
         <image name="bigLogo" width="60" height="60"/>
-        <image name="play" width="80" height="80"/>
+        <image name="play" width="40" height="40"/>
         <image name="save" width="32" height="32"/>
         <image name="search" width="32" height="32"/>
         <image name="user" width="32" height="32"/>

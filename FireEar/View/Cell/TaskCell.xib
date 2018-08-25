@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="532" height="119.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEN-Me-g7W" customClass="AKNodeOutputPlot" customModule="AudioKitUI">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEN-Me-g7W">
                         <rect key="frame" x="30" y="54" width="422" height="50"/>
                         <color key="backgroundColor" red="0.52156862749999999" green="0.57254901960000004" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
