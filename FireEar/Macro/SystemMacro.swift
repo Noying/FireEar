@@ -52,4 +52,10 @@ class SystemMacro: NSObject {
         let docPath = docs[0]
         return docPath;
     }
+    
+    //判断文件是否需要新建
+    static func isFileNeedNew(_ path:String) -> Bool {
+        let fileManager = FileManager.init()
+        return !fileManager.fileExists(atPath: path)
+    }
 }

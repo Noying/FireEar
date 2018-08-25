@@ -16,6 +16,8 @@ class MusicCreateManger:NSObject{
         case InvalidError (String)
     }
     
+    static let main:MusicCreateManger = MusicCreateManger()
+    
     override init() {
         super.init()
     }
@@ -30,14 +32,14 @@ class MusicCreateManger:NSObject{
     /// - Returns: 返回改好的字符串
     func setBuffer(_ buffer:AVAudioPCMBuffer,frqsAndAltm:[(Double,Double)],startTime:Double,endTime:Double)
         throws -> AVAudioPCMBuffer {
-            guard (buffer.value(forKey: AVSampleRateKey)! as! Double) == 44100 else {
+            guard (buffer.format.settings[AVSampleRateKey]! as! Double) == 44100 else {
                 throw OptionError.RateError("the rate of buffer is error")
             }
-            guard (buffer.value(forKey: AVLinearPCMBitDepthKey)! as! Int) == 16 &&
-                !(buffer.value(forKey: AVLinearPCMIsFloatKey)! as! Bool) else {
-                throw OptionError.BitError("the bit is error or pcm is float!")
+            guard (buffer.format.settings[AVLinearPCMBitDepthKey]! as! Int) == 16 &&
+                !(buffer.format.settings[AVLinearPCMIsFloatKey]! as! Bool) else {
+                    throw OptionError.BitError("the bit is error or pcm is float!")
             }
-            guard buffer.frameLength < Int(endTime*44100) else {
+            guard buffer.frameLength <= AUAudioFrameCount(endTime*44100) else {
                 throw OptionError.InvalidError("Invalid endTime")
             }
             let endFrame = Int(endTime*44100)
@@ -64,18 +66,20 @@ class MusicCreateManger:NSObject{
             AVLinearPCMBitDepthKey:16,
             AVLinearPCMIsFloatKey:false
             ])!, frameCapacity:AVAudioFrameCount(Int(time*44100)))
+        buffer?.frameLength = (buffer?.frameCapacity)!
         return buffer
     }
     
+    
     func setBuffer(_ buffer:AVAudioPCMBuffer,startFreq:Double,endFreq:Double,sweepTime:Double,altm:Double,startTime:Double,endTime:Double) throws ->AVAudioPCMBuffer {
-        guard (buffer.value(forKey: AVSampleRateKey)! as! Double) == 44100 else {
+        guard (buffer.format.settings[AVSampleRateKey]! as! Double) == 44100 else {
             throw OptionError.RateError("the rate of buffer is error")
         }
-        guard (buffer.value(forKey: AVLinearPCMBitDepthKey)! as! Int) == 16 &&
-            !(buffer.value(forKey: AVLinearPCMIsFloatKey)! as! Bool) else {
+        guard (buffer.format.settings[AVLinearPCMBitDepthKey]! as! Int) == 16 &&
+            !(buffer.format.settings[AVLinearPCMIsFloatKey]! as! Bool) else {
                 throw OptionError.BitError("the bit is error or pcm is float!")
         }
-        guard buffer.frameLength < Int(endTime*44100) else {
+        guard buffer.frameLength <= AUAudioFrameCount(endTime*44100) else {
             throw OptionError.InvalidError("Invalid endTime")
         }
         let endFrame = Int(endTime*44100)
@@ -83,7 +87,7 @@ class MusicCreateManger:NSObject{
         let data = buffer.int16ChannelData!
         let point = data.pointee
         for i in 0...endFrame-startFrame {
-            let k = exp(log((startFreq)/endFreq)/sweepTime)
+            let k = exp(log(endFreq/startFreq)/sweepTime) //增长系数
             let dt = 1.0/44100
             let p = 2*Double.pi*startFreq/log(k)
             let fsweap = Int(44100*sweepTime)
@@ -98,7 +102,7 @@ class MusicCreateManger:NSObject{
     func writeToPath(path:String,buffer:AVAudioPCMBuffer) -> Void {
         do {
             let url = URL(fileURLWithPath: path)
-            let file = try AKAudioFile.init(forWriting: url, settings:buffer.format.settings)
+            let file = try AKAudioFile.init(forWriting: url, settings:buffer.format.settings,commonFormat:AVAudioCommonFormat.pcmFormatInt16,interleaved:false)
             try file.write(from: buffer)
         } catch  {
             print(error)
@@ -107,10 +111,12 @@ class MusicCreateManger:NSObject{
     
     func writeDefault(step:TaskStepInfo) -> Void {
         do {
-            let path = SystemMacro.getDocumentsPath()+"/"+step.stepName!+".caf" //判断如果该文件不存在
-            var buffer = self.createBuffer(time: 20)
-            buffer = try self.setBuffer(buffer!, startFreq: step.startFreq!, endFreq: step.endFreq!, sweepTime: step.sweeptime!, altm: step.vol!, startTime: 0, endTime: 20)
-            self.writeToPath(path:path, buffer: buffer!)
+            let path = step.getMusicPath()//判断如果该文件不存在
+            if SystemMacro.isFileNeedNew(path) {
+                var buffer = self.createBuffer(time: 20)
+                buffer = try self.setBuffer(buffer!, startFreq: step.startFreq!, endFreq: step.endFreq!, sweepTime: step.sweeptime!, altm: step.vol!, startTime: 0, endTime: 20)
+                self.writeToPath(path:path, buffer: buffer!)
+            }
         } catch  {
             print(error)
         }

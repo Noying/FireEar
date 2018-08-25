@@ -42,4 +42,9 @@ class TaskStepInfo: NSObject,NSCoding{
     public convenience init(dic:NSDictionary){
         self.init()
     }
+    
+    func getMusicPath() -> String {
+        let path = SystemMacro.getDocumentsPath()+"/"+self.stepName!+".wav"
+        return path
+    }
 }
