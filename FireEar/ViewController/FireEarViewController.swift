@@ -10,25 +10,37 @@ import UIKit
 import AudioKitUI
 
 class FireEarViewController: UIViewController {
-
-
-    @IBOutlet weak var styleNameLabel: UILabel!
+    
     @IBOutlet weak var remainderLabel: UILabel!
     @IBOutlet weak var controlBtn: UIButton!
-    var task:TaskInfo?
+    
+    var taskRunInWhere:TaskRunInWhere!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        styleNameLabel.text = task?.taskName;
-        if let remainderTime = task?.taskRemindarTime{
-            remainderLabel.text =  TaskInfo.getRemindarShowText(time:remainderTime)
+        switch taskRunInWhere.taskStyle {
+        case .autoFire:
+            self.createAutoFireFile();
+            break;
+        case .customFire:
+            break;
+        case .localFire:
+            break;
         }
+        
     }
     
-    
+    func createAutoFireFile(){
+        let info = taskRunInWhere.taskInfo as! NSDictionary
+        let step = info.value(forKey: "step") as! Int
+        let remaindar = info.value(forKey: "remaindarTime") as! Int
+        MusicCreateManger.main.writeDefault(step)
+        let stepDic = TaskStepArray.singleton.stepArray[step] as! NSDictionary
+        self.title = stepDic.value(forKey: "stepName") as? String
+        
+        self.remainderLabel.text = "所剩时间: " + SystemMacro.timeStringFromSecond(remaindar);
+    }
     
 
     override func didReceiveMemoryWarning() {
@@ -36,9 +48,16 @@ class FireEarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
+    
     @IBAction func event_gtoMain(_ sender: Any) {
         
+        for vc in self.navigationController!.viewControllers{
+            if vc is MainViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
     }
     /*
     // MARK: - Navigation

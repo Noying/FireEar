@@ -11,11 +11,6 @@ import AudioKit
 import AudioKitUI
 
 class ViewController: UIViewController {
-
-
-    
-    
-    
     var player = MusicPlayerTest()
     
     required init?(coder aDeoder:NSCoder){

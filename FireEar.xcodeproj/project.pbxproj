@@ -14,7 +14,6 @@
 		B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C98F212857B900FD29E9 /* KeyChainManger.swift */; };
 		B000C9932128FCD900FD29E9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C9922128FCD900FD29E9 /* UserInfo.swift */; };
 		B000C998212905E800FD29E9 /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000C997212905E800FD29E9 /* AppMacro.swift */; };
-		B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = B000C99A21291F9600FD29E9 /* stepDic.plist */; };
 		B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E6E2126520C001661AC /* SelectModelViewController.swift */; };
 		B05C0E7F212800F8001661AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E7E212800F8001661AC /* MainViewController.swift */; };
 		B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E80212802DB001661AC /* FireEarViewController.swift */; };
@@ -24,10 +23,14 @@
 		B05C0E8921280687001661AC /* CreateDiyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E8821280687001661AC /* CreateDiyViewController.swift */; };
 		B05C0E8E21280A78001661AC /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E8C21280A78001661AC /* TaskCell.swift */; };
 		B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05C0E8D21280A78001661AC /* TaskCell.xib */; };
-		B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9221280B33001661AC /* TaskInfo.swift */; };
-		B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C0E9421280F7A001661AC /* TaskStepInfo.swift */; };
 		B05FA461212A3AB4005D9E18 /* MusicDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05FA460212A3AB4005D9E18 /* MusicDuration.swift */; };
-		B0780DA4212E6A080011C7B0 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0780DA3212E6A070011C7B0 /* SlideMenuController.swift */; };
+		B07F4FEA216DD96400701F9F /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07F4FE6216DD96400701F9F /* CoreAudioKit.framework */; };
+		B07F4FEB216DD96400701F9F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07F4FE7216DD96400701F9F /* CoreAudio.framework */; };
+		B07F4FEC216DD96400701F9F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07F4FE8216DD96400701F9F /* AudioToolbox.framework */; };
+		B0AD0B46219919F000EBD358 /* TaskStepArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B45219919F000EBD358 /* TaskStepArray.swift */; };
+		B0AD0B4821991A5100EBD358 /* TaskRunInWhere.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B4721991A5100EBD358 /* TaskRunInWhere.swift */; };
+		B0AD0B4A2199318400EBD358 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B492199318400EBD358 /* TaskManager.swift */; };
+		B0B860C8219C1FCD00BDF725 /* UsersTasksArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B860C7219C1FCD00BDF725 /* UsersTasksArray.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
 		B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F622115826D0039220A /* AppDelegate.swift */; };
@@ -36,26 +39,7 @@
 		B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F692115826E0039220A /* Assets.xcassets */; };
 		B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F6B2115826E0039220A /* LaunchScreen.storyboard */; };
 		B0F29BF22117212200CF3193 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F29BF12117212200CF3193 /* AVFoundation.framework */; };
-		ECFD663BA7CE04A8B284BB79 /* Pods_FireEarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */; };
-		F83A188240F17CBBFA62CE25 /* Pods_FireEarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B0EE7F742115826E0039220A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0EE7F572115826D0039220A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B0EE7F5E2115826D0039220A;
-			remoteInfo = FireEar;
-		};
-		B0EE7F7F2115826E0039220A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0EE7F572115826D0039220A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B0EE7F5E2115826D0039220A;
-			remoteInfo = FireEar;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0DB9E61C1E74CFC93CB06EAD /* Pods-FireEarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarUITests/Pods-FireEarUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +54,6 @@
 		B000C98F212857B900FD29E9 /* KeyChainManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManger.swift; sourceTree = "<group>"; };
 		B000C9922128FCD900FD29E9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		B000C997212905E800FD29E9 /* AppMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
-		B000C99A21291F9600FD29E9 /* stepDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stepDic.plist; sourceTree = "<group>"; };
 		B05C0E6E2126520C001661AC /* SelectModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelViewController.swift; sourceTree = "<group>"; };
 		B05C0E7E212800F8001661AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B05C0E80212802DB001661AC /* FireEarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEarViewController.swift; sourceTree = "<group>"; };
@@ -80,10 +63,15 @@
 		B05C0E8821280687001661AC /* CreateDiyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDiyViewController.swift; sourceTree = "<group>"; };
 		B05C0E8C21280A78001661AC /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		B05C0E8D21280A78001661AC /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
-		B05C0E9221280B33001661AC /* TaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfo.swift; sourceTree = "<group>"; };
-		B05C0E9421280F7A001661AC /* TaskStepInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepInfo.swift; sourceTree = "<group>"; };
 		B05FA460212A3AB4005D9E18 /* MusicDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDuration.swift; sourceTree = "<group>"; };
-		B0780DA3212E6A070011C7B0 /* SlideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		B07F4FE5216DD96400701F9F /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		B07F4FE6216DD96400701F9F /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		B07F4FE7216DD96400701F9F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B07F4FE8216DD96400701F9F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0AD0B45219919F000EBD358 /* TaskStepArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepArray.swift; sourceTree = "<group>"; };
+		B0AD0B4721991A5100EBD358 /* TaskRunInWhere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRunInWhere.swift; sourceTree = "<group>"; };
+		B0AD0B492199318400EBD358 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		B0B860C7219C1FCD00BDF725 /* UsersTasksArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTasksArray.swift; sourceTree = "<group>"; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
 		B0EE7F5F2115826D0039220A /* FireEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +81,6 @@
 		B0EE7F692115826E0039220A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EE7F6C2115826E0039220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EE7F6E2115826E0039220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0EE7F732115826E0039220A /* FireEarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireEarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0EE7F7E2115826E0039220A /* FireEarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireEarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F29BF12117212200CF3193 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B59048734D995C6A7DF5C349 /* Pods-FireEarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarTests/Pods-FireEarTests.release.xcconfig"; sourceTree = "<group>"; };
 		C97799FC1F7C83F8E5415E94 /* Pods-FireEar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEar/Pods-FireEar.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,24 +92,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F4FEA216DD96400701F9F /* CoreAudioKit.framework in Frameworks */,
+				B07F4FEB216DD96400701F9F /* CoreAudio.framework in Frameworks */,
+				B07F4FEC216DD96400701F9F /* AudioToolbox.framework in Frameworks */,
 				B0F29BF22117212200CF3193 /* AVFoundation.framework in Frameworks */,
 				AD14D653ECF3DE19C48F5308 /* Pods_FireEar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0EE7F702115826E0039220A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECFD663BA7CE04A8B284BB79 /* Pods_FireEarTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0EE7F7B2115826E0039220A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F83A188240F17CBBFA62CE25 /* Pods_FireEarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +106,10 @@
 		058E258DBCCE26910199B6A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B07F4FE8216DD96400701F9F /* AudioToolbox.framework */,
+				B07F4FE5216DD96400701F9F /* AudioUnit.framework */,
+				B07F4FE7216DD96400701F9F /* CoreAudio.framework */,
+				B07F4FE6216DD96400701F9F /* CoreAudioKit.framework */,
 				B0F29BF12117212200CF3193 /* AVFoundation.framework */,
 				405A402236179F0F85B88FE8 /* Pods_FireEar.framework */,
 				6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */,
@@ -167,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B000C9922128FCD900FD29E9 /* UserInfo.swift */,
+				B0B860C7219C1FCD00BDF725 /* UsersTasksArray.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -174,7 +152,6 @@
 		B000C99921291F5C00FD29E9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B000C99A21291F9600FD29E9 /* stepDic.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -182,7 +159,6 @@
 		B05C0E6D212651D9001661AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B0780DA3212E6A070011C7B0 /* SlideMenuController.swift */,
 				B05C0E6E2126520C001661AC /* SelectModelViewController.swift */,
 				B05C0E7E212800F8001661AC /* MainViewController.swift */,
 				B05C0E80212802DB001661AC /* FireEarViewController.swift */,
@@ -224,8 +200,9 @@
 		B05C0E9121280B09001661AC /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				B05C0E9221280B33001661AC /* TaskInfo.swift */,
-				B05C0E9421280F7A001661AC /* TaskStepInfo.swift */,
+				B0AD0B45219919F000EBD358 /* TaskStepArray.swift */,
+				B0AD0B4721991A5100EBD358 /* TaskRunInWhere.swift */,
+				B0AD0B492199318400EBD358 /* TaskManager.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -272,8 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				B0EE7F5F2115826D0039220A /* FireEar.app */,
-				B0EE7F732115826E0039220A /* FireEarTests.xctest */,
-				B0EE7F7E2115826E0039220A /* FireEarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,44 +294,6 @@
 			productReference = B0EE7F5F2115826D0039220A /* FireEar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0EE7F722115826E0039220A /* FireEarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0EE7F8A2115826E0039220A /* Build configuration list for PBXNativeTarget "FireEarTests" */;
-			buildPhases = (
-				515FF3ECF56845F52A704B65 /* [CP] Check Pods Manifest.lock */,
-				B0EE7F6F2115826E0039220A /* Sources */,
-				B0EE7F702115826E0039220A /* Frameworks */,
-				B0EE7F712115826E0039220A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B0EE7F752115826E0039220A /* PBXTargetDependency */,
-			);
-			name = FireEarTests;
-			productName = FireEarTests;
-			productReference = B0EE7F732115826E0039220A /* FireEarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B0EE7F7D2115826E0039220A /* FireEarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0EE7F8D2115826E0039220A /* Build configuration list for PBXNativeTarget "FireEarUITests" */;
-			buildPhases = (
-				9B79A3BFFC5EA9CE4518607C /* [CP] Check Pods Manifest.lock */,
-				B0EE7F7A2115826E0039220A /* Sources */,
-				B0EE7F7B2115826E0039220A /* Frameworks */,
-				B0EE7F7C2115826E0039220A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B0EE7F802115826E0039220A /* PBXTargetDependency */,
-			);
-			name = FireEarUITests;
-			productName = FireEarUITests;
-			productReference = B0EE7F7E2115826E0039220A /* FireEarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,14 +312,6 @@
 							};
 						};
 					};
-					B0EE7F722115826E0039220A = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = B0EE7F5E2115826D0039220A;
-					};
-					B0EE7F7D2115826E0039220A = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = B0EE7F5E2115826D0039220A;
-					};
 				};
 			};
 			buildConfigurationList = B0EE7F5A2115826D0039220A /* Build configuration list for PBXProject "FireEar" */;
@@ -399,8 +328,6 @@
 			projectRoot = "";
 			targets = (
 				B0EE7F5E2115826D0039220A /* FireEar */,
-				B0EE7F722115826E0039220A /* FireEarTests */,
-				B0EE7F7D2115826E0039220A /* FireEarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -411,24 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */,
-				B000C99B21291F9600FD29E9 /* stepDic.plist in Resources */,
 				B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */,
 				B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */,
 				B0EE7F682115826D0039220A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0EE7F712115826E0039220A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0EE7F7C2115826E0039220A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +372,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FireEar/Pods-FireEar-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -467,6 +380,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -477,42 +391,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireEar/Pods-FireEar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		515FF3ECF56845F52A704B65 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FireEarTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B79A3BFFC5EA9CE4518607C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FireEarUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -520,23 +398,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AD0B4821991A5100EBD358 /* TaskRunInWhere.swift in Sources */,
 				B000C998212905E800FD29E9 /* AppMacro.swift in Sources */,
 				B000C9932128FCD900FD29E9 /* UserInfo.swift in Sources */,
 				B0EE7F652115826D0039220A /* ViewController.swift in Sources */,
 				B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */,
 				B000C9842124663D00FD29E9 /* MusicPlayer.swift in Sources */,
 				B05C0E85212804B9001661AC /* LocalFileViewController.swift in Sources */,
-				B0780DA4212E6A080011C7B0 /* SlideMenuController.swift in Sources */,
 				B05C0E8921280687001661AC /* CreateDiyViewController.swift in Sources */,
 				B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */,
 				B05C0E81212802DB001661AC /* FireEarViewController.swift in Sources */,
 				B05C0E832128042C001661AC /* SelectDiyViewController.swift in Sources */,
-				B05C0E9521280F7A001661AC /* TaskStepInfo.swift in Sources */,
+				B0AD0B46219919F000EBD358 /* TaskStepArray.swift in Sources */,
+				B0B860C8219C1FCD00BDF725 /* UsersTasksArray.swift in Sources */,
 				B000C98E212857A000FD29E9 /* PlistManger.swift in Sources */,
 				B05C0E8E21280A78001661AC /* TaskCell.swift in Sources */,
+				B0AD0B4A2199318400EBD358 /* TaskManager.swift in Sources */,
 				B000C990212857B900FD29E9 /* KeyChainManger.swift in Sources */,
 				B05C0E6F2126520C001661AC /* SelectModelViewController.swift in Sources */,
-				B05C0E9321280B33001661AC /* TaskInfo.swift in Sources */,
 				B05FA461212A3AB4005D9E18 /* MusicDuration.swift in Sources */,
 				B000C9822124662A00FD29E9 /* MusicCreateManger.swift in Sources */,
 				B0EE7F632115826D0039220A /* AppDelegate.swift in Sources */,
@@ -545,34 +424,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0EE7F6F2115826E0039220A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0EE7F7A2115826E0039220A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B0EE7F752115826E0039220A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B0EE7F5E2115826D0039220A /* FireEar */;
-			targetProxy = B0EE7F742115826E0039220A /* PBXContainerItemProxy */;
-		};
-		B0EE7F802115826E0039220A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B0EE7F5E2115826D0039220A /* FireEar */;
-			targetProxy = B0EE7F7F2115826E0039220A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B0EE7F662115826D0039220A /* Main.storyboard */ = {
@@ -727,7 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.FireEar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -751,90 +603,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.FireEar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B0EE7F8B2115826E0039220A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFB528EA8C882345AAF58B1E /* Pods-FireEarTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FireEarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireEar.app/FireEar";
-			};
-			name = Debug;
-		};
-		B0EE7F8C2115826E0039220A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59048734D995C6A7DF5C349 /* Pods-FireEarTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FireEarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireEar.app/FireEar";
-			};
-			name = Release;
-		};
-		B0EE7F8E2115826E0039220A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB3BA2691EB8DC42082B22B /* Pods-FireEarUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FireEarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FireEar;
-			};
-			name = Debug;
-		};
-		B0EE7F8F2115826E0039220A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DB9E61C1E74CFC93CB06EAD /* Pods-FireEarUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FireEarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Roy.Roy.FireEarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FireEar;
 			};
 			name = Release;
 		};
@@ -855,24 +625,6 @@
 			buildConfigurations = (
 				B0EE7F882115826E0039220A /* Debug */,
 				B0EE7F892115826E0039220A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0EE7F8A2115826E0039220A /* Build configuration list for PBXNativeTarget "FireEarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0EE7F8B2115826E0039220A /* Debug */,
-				B0EE7F8C2115826E0039220A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0EE7F8D2115826E0039220A /* Build configuration list for PBXNativeTarget "FireEarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0EE7F8E2115826E0039220A /* Debug */,
-				B0EE7F8F2115826E0039220A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

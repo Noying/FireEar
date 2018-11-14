@@ -20,10 +20,10 @@ class SelectModelViewController: UIViewController {
     }
 
     @IBAction func event_FireEar(_ sender: Any) {
-        let taskDefault = TaskInfo.defaultTask()
+        let taskDefault = TaskRunInWhere.getNewAutoInfo()
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc:FireEarViewController = storyboard.instantiateViewController(withIdentifier: "FireEarViewController") as! FireEarViewController
-        vc.task = taskDefault
+        vc.taskRunInWhere = taskDefault
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

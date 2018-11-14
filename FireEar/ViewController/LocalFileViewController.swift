@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MediaPlayer
 
-class LocalFileViewController: UIViewController {
+class LocalFileViewController: UIViewController,MPMediaPickerControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +26,25 @@ class LocalFileViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func event_presentItunesMediaPickerController(_ sender: Any) {
+        let controller:MPMediaPickerController = MPMediaPickerController(mediaTypes: .music);
+        controller.allowsPickingMultipleItems = true
+        controller.prompt = "本地文件";
+        controller.delegate = self;
+        self.present(controller, animated: true, completion: nil)
     }
-    */
+    
+    func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        [mediaPicker .dismiss(animated: true, completion: {
+            //刷新列表
+        })];
+    }
+    
+    
+    func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
+        [mediaPicker .dismiss(animated: true, completion: {
+             //刷新列表
+        })];
+    }
 
 }

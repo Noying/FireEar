@@ -109,12 +109,18 @@ class MusicCreateManger:NSObject{
         }
     }
     
-    func writeDefault(step:TaskStepInfo) -> Void {
+    func writeDefault(_ step:Int) -> Void {
         do {
-            let path = step.getMusicPath()//判断如果该文件不存在
+            let dic:NSDictionary = TaskStepArray.singleton.stepArray[step] as! NSDictionary;
+            let path = TaskManager.singleton.getDefaultFilePath(step);
+            
             if SystemMacro.isFileNeedNew(path) {
                 var buffer = self.createBuffer(time: 20)
-                buffer = try self.setBuffer(buffer!, startFreq: step.startFreq!, endFreq: step.endFreq!, sweepTime: step.sweeptime!, altm: step.vol!, startTime: 0, endTime: 20)
+                let startFreq = dic.value(forKey: "startFreq") as! Double;
+                let endFreq = dic.value(forKey: "endFreq") as! Double;
+                let sweepTime = dic.value(forKey: "sweeptime") as! Double;
+                let vol = dic.value(forKey: "vol") as! Double;
+                buffer = try self.setBuffer(buffer!, startFreq:startFreq, endFreq:endFreq, sweepTime: sweepTime, altm: vol, startTime: 0, endTime: 20)
                 self.writeToPath(path:path, buffer: buffer!)
             }
         } catch  {

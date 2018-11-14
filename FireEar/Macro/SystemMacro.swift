@@ -14,12 +14,17 @@ import UserNotifications
 class SystemMacro: NSObject {
     // 让音乐后台运行
     static func registarMusicPlayBack(application :UIApplication) -> Void {
-        do{
-            let session = AVAudioSession.sharedInstance()
-            try session.setCategory(AVAudioSessionCategoryPlayback)
-            try session.setActive(true)
-        }catch{
-            print(error)
+        do {
+            if #available(iOS 10.0, *) {
+                try! AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback)
+            }
+            else {
+                // Workaround until https://forums.swift.org/t/using-methods-marked-unavailable-in-swift-4-2/14949 isn't fixed
+                AVAudioSession.sharedInstance().perform(NSSelectorFromString("setCategory:error:"), with: AVAudioSession.Category.playback)
+            }
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
         }
     }
   
@@ -46,7 +51,10 @@ class SystemMacro: NSObject {
         return bundle.bundlePath;
     }
     
-    //返回Documents地址
+    
+    /// 返回Documents地址
+    ///
+    /// - Returns: Documents 地址
     static func getDocumentsPath() -> String {
         let docs = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         let docPath = docs[0]
@@ -57,5 +65,14 @@ class SystemMacro: NSObject {
     static func isFileNeedNew(_ path:String) -> Bool {
         let fileManager = FileManager.init()
         return !fileManager.fileExists(atPath: path)
+    }
+    
+    //根据秒数返回字符串
+    static func timeStringFromSecond(_ seconds:Int) -> String{
+        let second = seconds%60;
+        let minute = (seconds/60)%60;
+        let hour = seconds/3600;
+        let timeStr = String(format: "%02d:%02d:%02d", hour,minute,second);
+        return timeStr;
     }
 }

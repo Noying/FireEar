@@ -28,15 +28,4 @@ class PlistManger :NSObject{
         
     }
     
-    func step(_ i:Int) -> TaskStepInfo? {
-        let dic = taskStepInfoArray![0] as! Dictionary<String,Any>
-        let step = TaskStepInfo.init()
-        step.startFreq = dic["startFreq"] as? Double
-        step.endFreq = dic["endFreq"] as? Double
-        step.stepTime = dic["stepTime"] as? UInt
-        step.sweeptime = dic["sweeptime"] as? Double
-        step.stepName = dic["stepName"] as? String
-        step.vol = dic["vol"] as? Double
-        return step
-    }
 }
