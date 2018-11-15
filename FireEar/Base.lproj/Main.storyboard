@@ -369,7 +369,10 @@
                                     <constraint firstAttribute="height" constant="40" id="Q5O-ql-iH3"/>
                                     <constraint firstAttribute="width" constant="40" id="r0S-VJ-HE1"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="stop"/>
+                                <state key="normal" title="Button" image="play"/>
+                                <connections>
+                                    <action selector="event_playOrPause:" destination="fdZ-3W-sKc" eventType="touchUpInside" id="Bz3-BS-EQG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -406,9 +409,9 @@
     <resources>
         <image name="add" width="32" height="32"/>
         <image name="back" width="32" height="32"/>
+        <image name="play" width="40" height="40"/>
         <image name="save" width="32" height="32"/>
         <image name="search" width="32" height="32"/>
-        <image name="stop" width="40" height="40"/>
         <image name="user" width="32" height="32"/>
     </resources>
 </document>

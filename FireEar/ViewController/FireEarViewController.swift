@@ -34,12 +34,11 @@ class FireEarViewController: UIViewController {
     func createAutoFireFile(){
         let info = taskRunInWhere.taskInfo as! NSDictionary
         let step = info.value(forKey: "step") as! Int
-        let remaindar = info.value(forKey: "remaindarTime") as! Int
-        MusicCreateManger.main.writeDefault(step)
+        let remaindar = taskRunInWhere.remaindarTime
         let stepDic = TaskStepArray.singleton.stepArray[step] as! NSDictionary
         self.title = stepDic.value(forKey: "stepName") as? String
         
-        self.remainderLabel.text = "所剩时间: " + SystemMacro.timeStringFromSecond(remaindar);
+        self.remainderLabel.text = "所剩时间: " + SystemMacro.timeStringFromSecond(remaindar!);
     }
     
 
@@ -50,6 +49,18 @@ class FireEarViewController: UIViewController {
     
     
     
+    @IBAction func event_playOrPause(_ sender: Any) {
+        let btn:UIButton = sender as! UIButton
+        btn.tag = btn.tag^1;
+        if(btn.tag==0){
+            btn.setImage(UIImage(named: "play"), for: UIControl.State.normal) ;
+            taskRunInWhere.play()
+        }else{
+            btn.setImage(UIImage(named: "stop"), for: UIControl.State.normal)  ;
+            taskRunInWhere.pause()
+        }
+        
+    }
     
     @IBAction func event_gtoMain(_ sender: Any) {
         

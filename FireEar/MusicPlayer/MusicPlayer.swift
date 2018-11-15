@@ -44,6 +44,32 @@ class MusicPlayer: NSObject {
        
     }
     
+    func play(_ path:String,time:Int){
+        do {
+            let file = try AKAudioFile(readFileName: path)
+            self.filePlayer = AKPlayer(audioFile: file)
+            let duration = Int(filePlayer!.duration)
+            var loop = 0
+            let maxloops = time/duration
+            
+            self.filePlayer!.completionHandler = {
+                if loop<maxloops{
+                    self.filePlayer!.play()
+                }
+                loop = loop+1
+                AKLog(loop)
+            }
+            
+            AudioKit.output = self.filePlayer
+            try AudioKit.start()
+            
+            self.filePlayer!.play()
+            
+        } catch  {
+            print(error)
+        }
+    }
+    
     func stop() -> Void {
         do {
             try AudioKit.stop()
