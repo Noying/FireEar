@@ -21,6 +21,8 @@ class MusicPlayer: NSObject {
     
     private override init() {
         super.init()
+        self.filePlayer = AKPlayer()
+        
     }
     
     func play() -> Void {
@@ -35,8 +37,8 @@ class MusicPlayer: NSObject {
     
     func play(_ path:String)->Void{
         do {
-            let file = try AKAudioFile(readFileName: path)
-            filePlayer = AKPlayer(audioFile: file)
+            let file = try AKAudioFile(readFileName: path, baseDir: .documents)
+            filePlayer?.load(audioFile: file)
             self.play()
         } catch  {
             print(error)
@@ -46,9 +48,9 @@ class MusicPlayer: NSObject {
     
     func play(_ path:String,time:Int){
         do {
-            let file = try AKAudioFile(readFileName: path)
-            self.filePlayer = AKPlayer(audioFile: file)
-            let duration = Int(filePlayer!.duration)
+            try self.filePlayer?.load(url: URL(fileURLWithPath: path))
+            self.filePlayer?.volume = 1.0;
+            let duration = Int(self.filePlayer!.duration)
             var loop = 0
             let maxloops = time/duration
             

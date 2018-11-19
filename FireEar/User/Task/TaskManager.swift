@@ -10,7 +10,7 @@ import Foundation
 
 class TaskManager: NSObject {
     static let singleton = TaskManager()
-    
+    var taskRunInWhereLast:TaskRunInWhere!
     override init() {
         super.init()
     }

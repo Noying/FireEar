@@ -13,10 +13,10 @@ import UserNotifications
 
 class SystemMacro: NSObject {
     // 让音乐后台运行
-    static func registarMusicPlayBack(application :UIApplication) -> Void {
+    static func registarMusicPlayBack() -> Void {
         do {
             if #available(iOS 10.0, *) {
-                try! AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback)
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
             }
             else {
                 // Workaround until https://forums.swift.org/t/using-methods-marked-unavailable-in-swift-4-2/14949 isn't fixed

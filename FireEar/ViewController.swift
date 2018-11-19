@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        player.playMusic(TaskManager.singleton.getDefaultFilePath(0), 0, endTime: 0)
      
     }
 

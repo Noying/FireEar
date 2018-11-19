@@ -7,15 +7,6 @@ target 'FireEar' do
 
   # Pods for FireEar
 
-  target 'FireEarTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'FireEarUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 	pod 'AudioKit'
 	pod 'ReactiveCocoa','~>8.0'
 	pod 'SnapKit'

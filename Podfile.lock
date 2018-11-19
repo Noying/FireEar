@@ -1,15 +1,16 @@
 PODS:
-  - AudioKit (4.4.0):
-    - AudioKit/Core (= 4.4.0)
-    - AudioKit/UI (= 4.4.0)
-  - AudioKit/Core (4.4.0)
-  - AudioKit/UI (4.4.0)
-  - ReactiveCocoa (8.0.1):
+  - AudioKit (4.5.4):
+    - AudioKit/Core (= 4.5.4)
+    - AudioKit/UI (= 4.5.4)
+  - AudioKit/Core (4.5.4)
+  - AudioKit/UI (4.5.4):
+    - AudioKit/Core
+  - ReactiveCocoa (8.0.2):
     - ReactiveSwift (~> 4.0)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.0.0)
-  - SnapKit (4.0.1)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - AudioKit
@@ -25,12 +26,12 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  AudioKit: 79c2b23cd00beb656938aa0b81b614391f17eaa3
-  ReactiveCocoa: ed7cbc50f86d4aa8660df5f76b46ae2a82560413
+  AudioKit: af3f5b73e22f85f3cd03076fea8afbb9658f0938
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
-  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 59c9a7317a8e1ffeddc9f0629651d160a1648010
+PODFILE CHECKSUM: bedf12f7ea48bbefbc0cbfbff47009072307c0cf
 
 COCOAPODS: 1.5.3

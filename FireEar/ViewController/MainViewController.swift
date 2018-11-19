@@ -29,6 +29,8 @@ class MainViewController:UIViewController,UITableViewDelegate,UITableViewDataSou
         
         let play = MusicPlayer.shared
         play.isloopAlways = false
+        
+ 
     }
 
     override func didReceiveMemoryWarning() {

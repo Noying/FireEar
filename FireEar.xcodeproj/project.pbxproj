@@ -30,6 +30,7 @@
 		B0AD0B46219919F000EBD358 /* TaskStepArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B45219919F000EBD358 /* TaskStepArray.swift */; };
 		B0AD0B4821991A5100EBD358 /* TaskRunInWhere.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B4721991A5100EBD358 /* TaskRunInWhere.swift */; };
 		B0AD0B4A2199318400EBD358 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD0B492199318400EBD358 /* TaskManager.swift */; };
+		B0B05A2121A25D78007E8FE3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B05A2021A25D78007E8FE3 /* Launch Screen.storyboard */; };
 		B0B860C8219C1FCD00BDF725 /* UsersTasksArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B860C7219C1FCD00BDF725 /* UsersTasksArray.swift */; };
 		B0CC117A2115883A00C3D239 /* SystemMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC11792115883A00C3D239 /* SystemMacro.swift */; };
 		B0CC117C2115889000C3D239 /* MusicPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */; };
@@ -37,17 +38,12 @@
 		B0EE7F652115826D0039220A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE7F642115826D0039220A /* ViewController.swift */; };
 		B0EE7F682115826D0039220A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F662115826D0039220A /* Main.storyboard */; };
 		B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F692115826E0039220A /* Assets.xcassets */; };
-		B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EE7F6B2115826E0039220A /* LaunchScreen.storyboard */; };
 		B0F29BF22117212200CF3193 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F29BF12117212200CF3193 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DB9E61C1E74CFC93CB06EAD /* Pods-FireEarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarUITests/Pods-FireEarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1E073430C91FEC4959F9E1E5 /* Pods-FireEar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEar/Pods-FireEar.debug.xcconfig"; sourceTree = "<group>"; };
 		405A402236179F0F85B88FE8 /* Pods_FireEar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireEar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireEarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireEarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DB3BA2691EB8DC42082B22B /* Pods-FireEarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarUITests/Pods-FireEarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B000C9812124662A00FD29E9 /* MusicCreateManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCreateManger.swift; sourceTree = "<group>"; };
 		B000C9832124663D00FD29E9 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		B000C98D212857A000FD29E9 /* PlistManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManger.swift; sourceTree = "<group>"; };
@@ -71,6 +67,7 @@
 		B0AD0B45219919F000EBD358 /* TaskStepArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStepArray.swift; sourceTree = "<group>"; };
 		B0AD0B4721991A5100EBD358 /* TaskRunInWhere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRunInWhere.swift; sourceTree = "<group>"; };
 		B0AD0B492199318400EBD358 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		B0B05A2021A25D78007E8FE3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B0B860C7219C1FCD00BDF725 /* UsersTasksArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTasksArray.swift; sourceTree = "<group>"; };
 		B0CC11792115883A00C3D239 /* SystemMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMacro.swift; sourceTree = "<group>"; };
 		B0CC117B2115889000C3D239 /* MusicPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTest.swift; sourceTree = "<group>"; };
@@ -79,12 +76,9 @@
 		B0EE7F642115826D0039220A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0EE7F672115826D0039220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0EE7F692115826E0039220A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0EE7F6C2115826E0039220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EE7F6E2115826E0039220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F29BF12117212200CF3193 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B59048734D995C6A7DF5C349 /* Pods-FireEarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarTests/Pods-FireEarTests.release.xcconfig"; sourceTree = "<group>"; };
 		C97799FC1F7C83F8E5415E94 /* Pods-FireEar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireEar/Pods-FireEar.release.xcconfig"; sourceTree = "<group>"; };
-		CFB528EA8C882345AAF58B1E /* Pods-FireEarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireEarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireEarTests/Pods-FireEarTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +106,6 @@
 				B07F4FE6216DD96400701F9F /* CoreAudioKit.framework */,
 				B0F29BF12117212200CF3193 /* AVFoundation.framework */,
 				405A402236179F0F85B88FE8 /* Pods_FireEar.framework */,
-				6CD48036F9C6B0D0E4A3D801 /* Pods_FireEarTests.framework */,
-				6A1B5C6D375A08431E40CF9A /* Pods_FireEarUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,10 +115,6 @@
 			children = (
 				1E073430C91FEC4959F9E1E5 /* Pods-FireEar.debug.xcconfig */,
 				C97799FC1F7C83F8E5415E94 /* Pods-FireEar.release.xcconfig */,
-				CFB528EA8C882345AAF58B1E /* Pods-FireEarTests.debug.xcconfig */,
-				B59048734D995C6A7DF5C349 /* Pods-FireEarTests.release.xcconfig */,
-				8DB3BA2691EB8DC42082B22B /* Pods-FireEarUITests.debug.xcconfig */,
-				0DB9E61C1E74CFC93CB06EAD /* Pods-FireEarUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -266,7 +254,7 @@
 				B0EE7F642115826D0039220A /* ViewController.swift */,
 				B0EE7F662115826D0039220A /* Main.storyboard */,
 				B0EE7F692115826E0039220A /* Assets.xcassets */,
-				B0EE7F6B2115826E0039220A /* LaunchScreen.storyboard */,
+				B0B05A2021A25D78007E8FE3 /* Launch Screen.storyboard */,
 				B0EE7F6E2115826E0039220A /* Info.plist */,
 			);
 			path = FireEar;
@@ -338,8 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05C0E8F21280A78001661AC /* TaskCell.xib in Resources */,
-				B0EE7F6D2115826E0039220A /* LaunchScreen.storyboard in Resources */,
 				B0EE7F6A2115826E0039220A /* Assets.xcassets in Resources */,
+				B0B05A2121A25D78007E8FE3 /* Launch Screen.storyboard in Resources */,
 				B0EE7F682115826D0039220A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +360,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FireEar/Pods-FireEar-frameworks.sh",
-				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -380,7 +367,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -433,14 +419,6 @@
 				B0EE7F672115826D0039220A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B0EE7F6B2115826E0039220A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0EE7F6C2115826E0039220A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

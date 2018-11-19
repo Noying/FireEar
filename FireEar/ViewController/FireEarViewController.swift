@@ -19,6 +19,9 @@ class FireEarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let task = TaskManager.singleton.taskRunInWhereLast {
+            task.pause()
+        }
         switch taskRunInWhere.taskStyle {
         case .autoFire:
             self.createAutoFireFile();
@@ -28,6 +31,11 @@ class FireEarViewController: UIViewController {
         case .localFire:
             break;
         }
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+       
         
     }
     
@@ -54,10 +62,11 @@ class FireEarViewController: UIViewController {
         btn.tag = btn.tag^1;
         if(btn.tag==0){
             btn.setImage(UIImage(named: "play"), for: UIControl.State.normal) ;
-            taskRunInWhere.play()
+            taskRunInWhere.pause()
         }else{
             btn.setImage(UIImage(named: "stop"), for: UIControl.State.normal)  ;
-            taskRunInWhere.pause()
+            TaskManager.singleton.taskRunInWhereLast = taskRunInWhere
+            taskRunInWhere.play()
         }
         
     }

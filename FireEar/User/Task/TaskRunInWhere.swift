@@ -62,8 +62,8 @@ class TaskRunInWhere: NSObject {
         switch taskStyle {
         case .autoFire:
             let step = (taskInfo as! NSDictionary).value(forKey: "step") as! Int
-            let path = SystemMacro.getDocumentsPath() + String(format: "/step%d", step)
-            MusicPlayer.shared.play(path, time: self.remaindarTime)
+            let path = TaskManager.singleton.getDefaultFilePath(step)
+            MusicPlayer.shared.play(path,time:self.remaindarTime)
             break;
         case .customFire:
             break;
